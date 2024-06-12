@@ -16,13 +16,13 @@ public class OrderController : Controller
     [HttpPost]
     public async Task<IActionResult> Checkout(string shippingMethod, string paymentMethod, string shippingAddress)
     {
-        // Xác thực người dùng
+        // xác thụực
         var userId = HttpContext.Session.GetInt32("userID");
         if (userId == null)
-            // Nếu người dùng chưa đăng nhập, chuyển hướng về trang đăng nhập hoặc trang chính
+            // chưa đăng nhập thì chuyển đến đăng nhập
             return RedirectToAction("Index", "Register");
 
-        // Lấy thông tin giỏ hàng của người dùng
+        // lấy thông tin từ giỏ hàng
         var cartItems = await _context.Carts
             .Where(c => c.UserId == userId)
             .Include(c => c.Product)
@@ -30,31 +30,28 @@ public class OrderController : Controller
 
         if (cartItems.Count == 0)
         {
-            // Nếu giỏ hàng của người dùng trống, không thực hiện thanh toán và hiển thị thông báo cho người dùng
+           
             TempData["Message"] = "Giỏ hàng của bạn đang trống.";
             return RedirectToAction("ViewCart", "Cart");
         }
 
-        // Tính tổng tiền
+        // tính tổng tiền
         var totalAmount = cartItems.Sum(c => c.Product.Price * c.Quantity);
 
-        // Tạo đơn hàng
+        // tạo đơn hàng
         var order = new Order
         {
             UserId = userId.Value,
             OrderDate = DateTime.Now,
             TotalAmount = totalAmount,
-            OrderStatus = "Chờ xác nhận", // Gán giá trị mặc định cho orderStatus
+            OrderStatus = "Chờ xác nhận", 
             ShippingMethod = shippingMethod,
             PaymentMethod = paymentMethod,
             ShippingAddress = shippingAddress
         };
-
-        // Lưu đơn hàng vào cơ sở dữ liệu
         _context.Orders.Add(order);
         await _context.SaveChangesAsync();
-
-        // Tạo chi tiết đơn hàng
+        // chi tiết đơn hàng
         foreach (var cartItem in cartItems)
         {
             var orderDetail = new OrderDetail
@@ -64,59 +61,47 @@ public class OrderController : Controller
                 Quantity = cartItem.Quantity,
                 UnitPrice = cartItem.Product.Price
             };
-
-            // Lưu chi tiết đơn hàng vào cơ sở dữ liệu
             _context.OrderDetails.Add(orderDetail);
         }
-
-        // Xóa các sản phẩm trong giỏ hàng của người dùng sau khi checkout
+        
+        // xóa các sản phẩm trong giỏ hàng 
         _context.Carts.RemoveRange(cartItems);
         await _context.SaveChangesAsync();
-
-        // Chuyển hướng đến trang thông báo thành công
         return RedirectToAction("OrderConfirm", new { orderId = order.OrderId });
     }
 
     public async Task<IActionResult> OrderConfirm(int orderId)
     {
-        // Lấy thông tin đơn hàng dựa trên orderId
+        // lấy thông tin đơn hàng dựa trên orderId
         var order = await _context.Orders
             .Include(o => o.OrderDetails)
             .ThenInclude(od => od.Product)
-            .Include(o => o.User) // Bao gồm thông tin người dùng
+            .Include(o => o.User) 
             .FirstOrDefaultAsync(o => o.OrderId == orderId);
-
-        // Kiểm tra xem đơn hàng có tồn tại không
+        
         if (order == null) return NotFound();
-
-        // Truyền thông tin đơn hàng đến view
+        
         return View(order);
     }
     public async Task<IActionResult> CancelOrder(int orderId)
     {
-        // Lấy đơn hàng từ cơ sở dữ liệu
+        // lấy đơn hàng từ cơ sở dữ liệu
         var order = await _context.Orders.FindAsync(orderId);
 
         if (order == null)
         {
-            // Trả về lỗi 404 nếu không tìm thấy đơn hàng
             return NotFound();
         }
 
-        // Kiểm tra xem đơn hàng có đang ở trạng thái cho phép huỷ không
+        // Kkểm tra xem đơn hàng có đang ở trạng thái cho phép huỷ không
         if (order.OrderStatus != "Chờ xác nhận")
         {
-            // Trả về lỗi nếu đơn hàng không thể được huỷ
             return BadRequest("This order cannot be canceled.");
         }
-
-        // Huỷ đơn hàng bằng cách đặt trạng thái là "Canceled"
+        // huỷ đơn hàng bằng cách đặt trạng thái là "Canceled"
         order.OrderStatus = "Đã Huỷ";
-
-        // Lưu thay đổi vào cơ sở dữ liệu
         await _context.SaveChangesAsync();
-
-        // Chuyển hướng người dùng đến trang chủ hoặc trang lịch sử đơn hàng
+        
         return RedirectToAction("Index", "User");
     }
 }

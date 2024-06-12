@@ -4986,6 +4986,42 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "X.PagedList/9.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/X.PagedList.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/X.PagedList.dll": {}
+        }
+      },
+      "X.PagedList.Mvc.Bootstrap4/9.0.0": {
+        "type": "package",
+        "dependencies": {
+          "X.PagedList.Mvc.Core": "9.1.2"
+        },
+        "compile": {
+          "lib/net6.0/X.PagedList.Mvc.Bootstrap4.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/X.PagedList.Mvc.Bootstrap4.Core.dll": {}
+        }
+      },
+      "X.PagedList.Mvc.Core/9.1.2": {
+        "type": "package",
+        "dependencies": {
+          "X.PagedList": "9.1.2"
+        },
+        "compile": {
+          "lib/net6.0/X.PagedList.Mvc.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/X.PagedList.Mvc.Core.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -13537,6 +13573,50 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "X.PagedList/9.1.2": {
+      "sha512": "qePK/lt+Y8PeQM9E/DkWY/AIyxDVEMX0XFCU5CfLP1+Y9SUThFyaY8/QgldOg9uOJLvse1i3oAQDJOrhb3usdw==",
+      "type": "package",
+      "path": "x.pagedlist/9.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net6.0/X.PagedList.dll",
+        "lib/net8.0/X.PagedList.dll",
+        "lib/netstandard2.0/X.PagedList.dll",
+        "lib/netstandard2.1/X.PagedList.dll",
+        "x.pagedlist.9.1.2.nupkg.sha512",
+        "x.pagedlist.nuspec"
+      ]
+    },
+    "X.PagedList.Mvc.Bootstrap4/9.0.0": {
+      "sha512": "7ao1j/3U577iNK2aWebO57c2qDYzfVFDnA68kGrT9pIyC0ofQRHVo63aadQII8MU2o3QOzFcPPexknE1Kiesqw==",
+      "type": "package",
+      "path": "x.pagedlist.mvc.bootstrap4/9.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/X.PagedList.Mvc.Bootstrap4.Core.dll",
+        "x.pagedlist.mvc.bootstrap4.9.0.0.nupkg.sha512",
+        "x.pagedlist.mvc.bootstrap4.nuspec"
+      ]
+    },
+    "X.PagedList.Mvc.Core/9.1.2": {
+      "sha512": "+g8fJgXXVhl17BzVv8bGAkWooul23REeGNIJ4jUlA1Iqbw8Yq0OFMx/mGvjjEhIBNwDrjdhJKXGt7N7jejZWcQ==",
+      "type": "package",
+      "path": "x.pagedlist.mvc.core/9.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net6.0/X.PagedList.Mvc.Core.dll",
+        "lib/net8.0/X.PagedList.Mvc.Core.dll",
+        "x.pagedlist.mvc.core.9.1.2.nupkg.sha512",
+        "x.pagedlist.mvc.core.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -13550,7 +13630,10 @@
       "Microsoft.EntityFrameworkCore.Sqlite >= 7.0.18",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.18",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.12",
-      "Slick >= 1.5.11"
+      "Slick >= 1.5.11",
+      "X.PagedList >= 9.1.2",
+      "X.PagedList.Mvc.Bootstrap4 >= 9.0.0",
+      "X.PagedList.Mvc.Core >= 9.1.2"
     ]
   },
   "packageFolders": {
@@ -13629,6 +13712,18 @@
           "Slick": {
             "target": "Package",
             "version": "[1.5.11, )"
+          },
+          "X.PagedList": {
+            "target": "Package",
+            "version": "[9.1.2, )"
+          },
+          "X.PagedList.Mvc.Bootstrap4": {
+            "target": "Package",
+            "version": "[9.0.0, )"
+          },
+          "X.PagedList.Mvc.Core": {
+            "target": "Package",
+            "version": "[9.1.2, )"
           }
         },
         "imports": [

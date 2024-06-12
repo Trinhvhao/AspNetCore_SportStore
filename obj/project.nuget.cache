@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wboV3NSjxODN4JWjbYcmJycXiQa+L9MGukdgjNyhFjfNP4oXPfIk4iJxVP71bRr77hfXTrbq2R036XDt8bXJQA==",
+  "dgSpecHash": "6Gm9bSSg8kU54PyZYJZ3DFAVFZ84BmFSZHC461pCdluZfmXBE53r89PDT1Npj2KGUS82Gk4fAqplVZ7jqQGCsA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\BackEnd_Project.csproj",
   "expectedPackageFiles": [
@@ -287,7 +287,10 @@
     "C:\\Users\\Admin\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\Admin\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\x.pagedlist\\9.1.2\\x.pagedlist.9.1.2.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\x.pagedlist.mvc.bootstrap4\\9.0.0\\x.pagedlist.mvc.bootstrap4.9.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\x.pagedlist.mvc.core\\9.1.2\\x.pagedlist.mvc.core.9.1.2.nupkg.sha512"
   ],
   "logs": []
 }

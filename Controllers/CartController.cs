@@ -48,7 +48,7 @@ public class CartController : Controller
 
         if (userId == null)
         {
-            // Người dùng chưa đăng nhập, lưu URL hiện tại và chuyển hướng đến trang đăng nhập
+            // người dùng chưa đăng nhập thì lưu URL hiện tại 
             HttpContext.Session.SetString("ReturnUrl", Url.Action("ViewCart", "Cart"));
             return RedirectToAction("Index", "Register");
         }
@@ -62,17 +62,17 @@ public class CartController : Controller
         return View(cartItems);
     }
 
-    // Action để xoá sản phẩm khỏi giỏ hàng
+    // action để xoá sản phẩm khỏi giỏ hàng
     [HttpPost]
     public async Task<IActionResult> RemoveFromCart(int productId)
     {
-        // Tìm sản phẩm trong giỏ hàng của người dùng
+        // tìm sản phẩm trong giỏ hàng của người dùng
         var userId = HttpContext.Session.GetInt32("userID");
         var cartItem = await _context.Carts.FirstOrDefaultAsync(c => c.UserId == userId && c.ProductId == productId);
 
         if (cartItem != null)
         {
-            // Xoá sản phẩm khỏi giỏ hàng
+            // xoá sản phẩm khỏi giỏ hàng
             _context.Carts.Remove(cartItem);
             await _context.SaveChangesAsync();
         }

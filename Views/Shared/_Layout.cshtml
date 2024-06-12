@@ -227,12 +227,13 @@
 
 <script src="~/js/main.js"></script>
 <script>
-    // Thêm sự kiện cho việc tải trang
     window.onload = function() {
-        // Lấy phần tử overlay
+        // lấy phần tử overlay
         var overlay = document.querySelector('.overlayy');
-        // Ẩn overlay khi trang đã tải hoàn toàn
-        overlay.style.display = 'none';
+        // Delay 0.8s giây trước khi ẩn overlay
+            setTimeout(function() {
+                overlay.style.display = 'none';
+            }, 800); 
     };
 
 </script>

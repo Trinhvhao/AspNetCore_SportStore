@@ -1409,7 +1409,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header_area .navbar .nav .nav-item:hover .nav-link, .header_area .navbar .nav .nav-item.active .nav-link {
-    color: #ffba00;
+    color: #00c4ff;
 }
 
 .header_area .navbar .nav .nav-item.submenu {
@@ -2710,16 +2710,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .organic-body .quick-view-carousel .owl-controls .owl-dots .owl-dot:nth-child(1) {
-    background: url(images/organic-food/ob1.jpg);
+    background: url();
     margin-left: 0;
 }
 
 .organic-body .quick-view-carousel .owl-controls .owl-dots .owl-dot:nth-child(2) {
-    background: url(images/organic-food/ob2.jpg);
+    background: url();
 }
 
 .organic-body .quick-view-carousel .owl-controls .owl-dots .owl-dot:nth-child(3) {
-    background: url(images/organic-food/ob3.jpg);
+    background: url();
 }
 
 .organic-body .organic span {
@@ -4452,7 +4452,7 @@ label {
 }
 
 .pagination {
-    margin-top: 10px;
+    margin-top: 4px;
     border-left: 1px solid #eee;
     border-radius: 0px;
 }
@@ -5409,6 +5409,22 @@ label {
     margin-bottom: 0px;
     border-radius: 0px;
 }
+.pagination .active span{
+    height: 40px ;
+width:40px;
+    display: block ;
+     border-radius: 0px;
+     background: #2ee4ba;
+     padding: 0px;
+     text-align: center;
+     line-height: 38px;
+     border-color: #eeeeee;
+     border-radius: 0px !important;
+     font-size: 14px;
+     color: #222222;
+     font-weight: normal;
+     font-family: "Roboto", sans-serif;
+ }
 
 .cat_page .pagination li a {
     height: 40px;

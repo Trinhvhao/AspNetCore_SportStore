@@ -77,6 +77,18 @@
             "Slick": {
               "target": "Package",
               "version": "[1.5.11, )"
+            },
+            "X.PagedList": {
+              "target": "Package",
+              "version": "[9.1.2, )"
+            },
+            "X.PagedList.Mvc.Bootstrap4": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "X.PagedList.Mvc.Core": {
+              "target": "Package",
+              "version": "[9.1.2, )"
             }
           },
           "imports": [

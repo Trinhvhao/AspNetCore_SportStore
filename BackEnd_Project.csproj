@@ -18,6 +18,9 @@
         <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.18"/>
         <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.12"/>
         <PackageReference Include="Slick" Version="1.5.11"/>
+        <PackageReference Include="X.PagedList" Version="9.1.2" />
+        <PackageReference Include="X.PagedList.Mvc.Bootstrap4" Version="9.0.0" />
+        <PackageReference Include="X.PagedList.Mvc.Core" Version="9.1.2" />
     </ItemGroup>
 
     <ItemGroup>
@@ -2060,6 +2063,7 @@
         <_ContentIncludedByDefault Remove="Areas\Admin\Views\SpecificationAD\Edit.cshtml"/>
         <_ContentIncludedByDefault Remove="Areas\Admin\Views\SpecificationAD\Index.cshtml"/>
         <_ContentIncludedByDefault Remove="Pages\User\Index.cshtml" />
+        <_ContentIncludedByDefault Remove="Views\WishList\Index.cshtml" />
     </ItemGroup>
 
     <ItemGroup>

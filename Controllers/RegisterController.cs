@@ -23,7 +23,7 @@ public class RegisterController : Controller
     public IActionResult Index(User model)
     {
         if (!ModelState.IsValid) return View(model);
-        // Thêm logic để lưu dữ liệu đăng ký vào database
+        // thêm logic để lưu dữ liệu đăng ký vào database
         var user = new User
         {
             Username = model.Username,
@@ -31,28 +31,26 @@ public class RegisterController : Controller
             Email = model.Email,
             FullName = model.FullName,
             PhoneNumber = model.PhoneNumber,
-            Role = model.Role, // Đặt vai trò mặc định là "Customer"
+            Role = model.Role, 
             Address = model.Address,
             CreatedAt = DateTime.Now
         };
         _context.Users.Add(user);
         _context.SaveChanges();
 
-        // Lưu thông tin userID vào session
+      
         HttpContext.Session.SetInt32("userID", user.UserId);
-
-        // Kiểm tra và lấy URL từ session
         var returnUrl = HttpContext.Session.GetString("ReturnUrl");
 
         if (!string.IsNullOrEmpty(returnUrl))
         {
-            // Xóa ReturnUrl khỏi session
+            // xóa ReturnUrl khỏi session
             HttpContext.Session.Remove("ReturnUrl");
             return Redirect(returnUrl);
         }
 
-        // Chuyển hướng người dùng đến trang chủ của website
-        return RedirectToAction("Index", "Home"); // Chuyển hướng sau khi đăng ký thành công
+        // chuyển hướng sau khi đăng ký thành công
+        return RedirectToAction("Index", "Home"); 
     }
 
     [HttpPost]
@@ -63,27 +61,27 @@ public class RegisterController : Controller
 
         if (user != null)
         {
-            // Lưu thông tin userID vào session
+            // lưu thông tin userID vào session
             HttpContext.Session.SetInt32("userID", user.UserId);
             ViewBag.userID = HttpContext.Session.GetInt32("userID");
-            // Kiểm tra và lấy URL từ session
+            // kiểm tra và lấy URL từ session
             var returnUrl = HttpContext.Session.GetString("ReturnUrl");
 
             if (!string.IsNullOrEmpty(returnUrl))
             {
-                // Xóa ReturnUrl khỏi session
+                // xóa ReturnUrl khỏi session
                 HttpContext.Session.Remove("ReturnUrl");
                 return Redirect(returnUrl);
             }
 
             if (user.Role == "Admin")
-                // Chuyển hướng người dùng đến trang quản trị
+                // chuyển hướng người dùng đến trang quản trị
                 return RedirectToAction("Index", "Admin", new { area = "Admin" });
-            // Chuyển hướng người dùng đến trang chủ của website
+            // chuyển hướng người dùng đến trang chủ của website
             return RedirectToAction("Index", "Home");
         }
 
-        // Đăng nhập thất bại, chuyển hướng người dùng đến trang đăng nhập với thông báo lỗi
+        //ddăng nhập thất bại, chuyển hướng người dùng đến trang đăng nhập với thông báo lỗi
         ViewBag.ErrorMessage = "Invalid username or password.";
         return View("Index");
     }

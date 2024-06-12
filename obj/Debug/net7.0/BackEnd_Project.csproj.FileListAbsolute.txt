@@ -292,3 +292,6 @@ C:\Users\Admin\RiderProjects\BackEnd_Project\BackEnd_Project\bin\Debug\net7.0\zh
 C:\Users\Admin\RiderProjects\BackEnd_Project\BackEnd_Project\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\Admin\RiderProjects\BackEnd_Project\BackEnd_Project\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 C:\Users\Admin\RiderProjects\BackEnd_Project\BackEnd_Project\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+C:\Users\Admin\RiderProjects\BackEnd_Project\BackEnd_Project\bin\Debug\net7.0\X.PagedList.dll
+C:\Users\Admin\RiderProjects\BackEnd_Project\BackEnd_Project\bin\Debug\net7.0\X.PagedList.Mvc.Bootstrap4.Core.dll
+C:\Users\Admin\RiderProjects\BackEnd_Project\BackEnd_Project\bin\Debug\net7.0\X.PagedList.Mvc.Core.dll
