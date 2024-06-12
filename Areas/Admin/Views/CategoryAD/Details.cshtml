@@ -1,0 +1,37 @@
+﻿@model Category
+
+@{
+    ViewData["Title"] = "Category Detail";
+    Layout = "_LayoutAdmin";
+}
+
+<div class="container">
+    <div class="m-auto text-center">
+        <h1 class="mt-5">Category Detail</h1>
+        <div class="card col-md-8 m-auto">
+            <div class="card-body">
+                <h5 class="card-title">Category Name</h5>
+                <p class="card-text text-primary">@Model.Name</p>
+                <h5 class="card-title">Description</h5>
+                <p class="card-text text-primary">@Model.Description</p>
+                <h5 class="card-title">Products</h5>
+                @if (Model.Products.Any())
+                {
+                    <ul class="list-group">
+                        @foreach (var product in Model.Products)
+                        {
+                            <li class="list-group-item">@product.Name</li>
+                        }
+                    </ul>
+                }
+                else
+                {
+                    <p>No products available in this category.</p>
+                }
+            </div>
+            <div class="mt-3">
+                <a asp-action="Index">Back to List</a>
+            </div>
+        </div>
+    </div>
+</div>

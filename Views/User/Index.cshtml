@@ -1,0 +1,289 @@
+﻿@using System.Globalization
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model UserOrderViewModel
+@{
+    Layout = "_Layout";
+}
+<!-- Start Banner Area -->
+<section class="banner-area organic-breadcrumb">
+    <div class="container">
+        <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+            <div class="col-first">
+                <h1>User Info</h1>
+                <nav class="d-flex align-items-center">
+                    <a asp-action="Index" asp-controller="Home">
+                        Home
+                        <span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </a>
+                    <a asp-action="Index" asp-controller="User">
+                        User
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Banner Area -->
+<div class="container mt-4">
+<div class="row">
+    <div class="col-md-3 bg-white shadow p-3 rounded text-center">
+        <!-- Sidebar -->
+        
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa-solid fa-user pr-3"></i> Tài khoản của tôi
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Ngân hàng</a>
+                    <a class="dropdown-item" href="#">Địa chỉ</a>
+                    <a class="dropdown-item" href="#">Đổi mật khẩu</a>
+                    <a id="logoutLink" class="dropdown-item" asp-action="Logout">Đăng xuất</a>
+                </div>
+            </div>
+      
+            <div class="mt-3">
+                <button class="btn btn-primary" id="btnOrder" type="button" d>
+                    <i class="fa-solid fa-cart-shopping pr-3"></i>Đơn hàng đã mua
+                </button>
+            </div>
+        </div>
+   
+    <div id="user" class="col-md-9 ">
+        <!-- Main Content -->
+        <div class="bg-white shadow p-3 rounded">
+
+            <hr/>
+            <form asp-controller="User" method="post" asp-action="Edit">
+                <p class="title">User Information</p>
+                <p class="message">Quản lý thông tin hồ sơ để bảo mật tài khoản</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="FullName">Name:</label>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="text" id="FullName" name="FullName" class="form-control" value="@Model.User.FullName" readonly>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mt-3">
+                        <label for="Email">Email:</label>
+                    </div>
+                    <div class="col-md-8 mt-3">
+                        <input type="email" id="Email" name="Email" class="form-control" value="@Model.User.Email" readonly>
+                    </div>
+                </div>
+                <!-- Add additional information as needed -->
+                <div class="row">
+                    <div class="col-md-4 mt-3">
+                        <label for="PhoneNumber">Phone:</label>
+                    </div>
+                    <div class="col-md-8 mt-3">
+                        <input type="tel" id="PhoneNumber" name="PhoneNumber" class="form-control" value="@Model.User.PhoneNumber" readonly>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mt-3">
+                        <label for="Address">Address:</label>
+                    </div>
+                    <div class="col-md-8 mt-3">
+                        <textarea id="Address" name="Address" class="form-control" readonly>@Model.User.Address</textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mt-3">
+                        <button type="button" id="editBtn" class="btn btn-primary">Edit</button>
+                        <button type="submit" id="saveBtn" class="btn btn-primary" style="display: none;">Save Changes</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <div id="order" class="col-md-9 d-none">
+        <!-- Main Content -->
+        <div class="bg-white shadow p-3 rounded">
+            <hr/>
+            <p class="title">Đơn mua</p>
+            <p class="message">Thông tin các đơn hàng của bạn </p>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Mã đơn</th>
+                            <th>Ngày đặt</th>
+                            <th>Số lượng</th>
+                            <th>Chi tiết</th>
+                            <th>Trạng thái</th>
+                            <th>Xác nhận</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var order in Model.Orders)
+                        {
+                            <tr>
+                                <td>@order.OrderId</td>
+                                <td>@order.OrderDate.ToString("dd/MM/yyyy")</td>
+                                @{
+                                    var total = order.TotalAmount.ToString("C",new CultureInfo("vi-VN"));
+                                }
+                                <td>@total</td>
+                                <td>
+                                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#orderDetails_@order.OrderId" aria-expanded="false" aria-controls="orderDetails_@order.OrderId">
+                                        View Details
+                                    </button>
+                                    <div class="collapse mt-2" id="orderDetails_@order.OrderId">
+                                        <table class="table table-sm table-bordered">
+                                            <thead>
+                                            <tr>
+                                                <th>Product</th>
+                                                <th>Quantity</th>
+                                                <th>Price</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            @foreach (var detail in order.OrderDetails)
+                                            {
+                                                <tr>
+                                                    <td>@detail.Product.Name</td>
+                                                    <td>@detail.Quantity</td>
+                                                    @{
+                                                        var unitPrice = detail.UnitPrice.ToString("C", new CultureInfo("vi-VN"));
+                                                    }
+                                                    <td>@unitPrice</td>
+                                                </tr>
+                                            }
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                                <td>@order.OrderStatus</td>
+                                 <td>
+                                                        @if (order.OrderStatus == "Chờ xác nhận")
+                                                        {
+                                                            <form id="cancelOrder" method="post" asp-controller="Order" asp-action="CancelOrder" asp-route-orderId="@order.OrderId">
+                                                                <button type="submit" class="btn btn-danger" onclick="confirmCancel()">Huỷ</button>
+                                                            </form>
+                                                        }
+                                                        else
+                                                        {
+                                                            <p>Không thể thực hiện yêu cầu</p>
+                                                        }
+                                                    </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    <div class="notifications-container d-none" id="successAlert" >
+        <div class="success">
+            <div class="d-flex">
+                <div class="flex-shrink-0">
+            
+                    <svg class="succes-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <div class="success-prompt-wrap">
+                    <p class="success-prompt-heading">Change Success
+                    </p><div class="success-prompt-prompt">
+                        <p>Thông tin người dùng được cập nhật thành công</p>
+                    </div>
+                    <div class="success-button-container">
+                        <button type="button" class="success-button-main">Trang Chủ</button>
+                        <button type="button" class="success-button-secondary">Bỏ qua</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+function confirmCancel() {
+        if (confirm("Bạn có chắc chắn muốn huỷ đơn hàng này không?")) {
+            document.getElementById("cancelOrderForm").submit();
+        }
+    }
+document.addEventListener("DOMContentLoaded", function() {
+            var logoutLink = document.getElementById("logoutLink");
+            logoutLink.addEventListener("click", function(event) {
+                var confirmLogout = confirm("Bạn có chắc chắn muốn đăng xuất?");
+                if (!confirmLogout) {
+                    event.preventDefault();
+                }
+            });
+        });
+document.addEventListener("DOMContentLoaded", function() {
+    // Kiểm tra nếu thông báo thành công đã được thiết lập trong TempData
+    if ("@TempData["SuccessMessage"]" == 1) {
+        // Hiển thị thông báo thành công
+        var successAlert = document.getElementById("successAlert");
+        successAlert.classList.remove("d-none");
+        successAlert.classList.add("show");
+
+        // Thiết lập hàm để ẩn thông báo sau 10 giây
+        setTimeout(function() {
+            successAlert.classList.remove("show");
+            successAlert.classList.add("d-none");
+        }, 10000); // 10 giây
+    }
+});
+
+
+   // Wait for the document to be fully loaded
+      document.addEventListener("DOMContentLoaded", function () {
+          // Get the edit button and save button
+          var editBtn = document.getElementById("editBtn");
+          var saveBtn = document.getElementById("saveBtn");
+  
+          // Get all input fields
+          var inputFields = document.querySelectorAll("input, textarea");
+  
+          // Add click event listener to the edit button
+          editBtn.addEventListener("click", function () {
+              // Remove the readonly attribute from all input fields
+              inputFields.forEach(function (input) {
+                  input.removeAttribute("readonly");
+              });
+  
+              // Show the save button and hide the edit button
+              saveBtn.style.display = "block";
+              editBtn.style.display = "none";
+          });
+  
+          // Add form submit event listener
+          var form = document.querySelector("form");
+          form.addEventListener("submit", function (event) {
+              // Prevent the default form submission
+              event.preventDefault();
+  
+              // Submit the form
+              form.submit();
+          });
+      });  
+        document.addEventListener("DOMContentLoaded", function() {
+                  var btnUser = document.getElementById("dropdownMenuButton");
+                  var btnOrder = document.getElementById("btnOrder");
+                  var userDiv = document.getElementById("user");
+                  var orderDiv = document.getElementById("order");
+      
+                  btnUser.addEventListener("click", function() {
+                      userDiv.classList.remove("d-none");
+                      userDiv.classList.add("d-block");
+                      orderDiv.classList.remove("d-block");
+                      orderDiv.classList.add("d-none");
+                  });
+      
+                  btnOrder.addEventListener("click", function() {
+                      orderDiv.classList.remove("d-none");
+                      orderDiv.classList.add("d-block");
+                      userDiv.classList.remove("d-block");
+                      userDiv.classList.add("d-none");
+                  });
+              });
+</script>

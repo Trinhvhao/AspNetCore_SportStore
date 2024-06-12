@@ -1,0 +1,1817 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\BackEnd_Project.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BackEnd_Project.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_alert.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_badge.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_breadcrumb.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_button-group.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_button-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_buttons.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_card.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_card.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_carousel.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_carousel.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_close.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_close.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_code.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_code.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_custom-forms.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_custom-forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_forms.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_functions.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_functions.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_grid.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_images.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_images.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_input-group.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_input-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_jumbotron.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_jumbotron.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_list-group.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_media.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_media.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_modal.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_modal.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_nav.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_nav.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_navbar.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_navbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_pagination.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_popover.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_popover.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_print.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_print.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_progress.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_progress.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_reboot.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_root.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_root.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_spinners.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_spinners.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_tables.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_tables.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_toasts.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_toasts.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_tooltip.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_tooltip.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_transitions.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_transitions.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_type.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_type.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_utilities.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\bootstrap-grid.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\bootstrap-grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\bootstrap-reboot.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\bootstrap-reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\bootstrap.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_alert.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_background-variant.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_background-variant.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_badge.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_border-radius.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_border-radius.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_box-shadow.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_box-shadow.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_breakpoints.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_breakpoints.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_caret.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_caret.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_deprecate.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_deprecate.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_float.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_float.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_forms.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_gradients.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_gradients.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_grid-framework.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_grid-framework.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_grid.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_hover.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_hover.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_image.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_image.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_list-group.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_lists.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_lists.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_nav-divider.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_nav-divider.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_pagination.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_reset-text.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_reset-text.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_resize.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_resize.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_screen-reader.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_size.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_size.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_table-row.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_table-row.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_text-emphasis.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_text-emphasis.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_text-hide.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_text-hide.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_text-truncate.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_text-truncate.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_transition.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_transition.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\mixins\\_visibility.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\mixins\\_visibility.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\utilities\\_align.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\utilities\\_align.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\utilities\\_background.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\utilities\\_background.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\utilities\\_borders.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\utilities\\_borders.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\utilities\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\utilities\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\utilities\\_display.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\utilities\\_display.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\utilities\\_embed.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\utilities\\_embed.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\utilities\\_flex.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\utilities\\_flex.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\utilities\\_float.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\utilities\\_float.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\utilities\\_interactions.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\utilities\\_interactions.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\utilities\\_overflow.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\utilities\\_overflow.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\utilities\\_position.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\utilities\\_position.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\utilities\\_screenreaders.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\utilities\\_screenreaders.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\utilities\\_shadows.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\utilities\\_shadows.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\utilities\\_sizing.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\utilities\\_sizing.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\utilities\\_spacing.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\utilities\\_spacing.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\utilities\\_stretched-link.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\utilities\\_stretched-link.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\utilities\\_text.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\utilities\\_text.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\utilities\\_visibility.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\utilities\\_visibility.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\bootstrap\\scss\\vendor\\_rfs.scss",
+      "PackagePath": "staticwebassets\\admin\\bootstrap\\scss\\vendor\\_rfs.scss"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\chart.js\\Chart.bundle.js",
+      "PackagePath": "staticwebassets\\admin\\chart.js\\Chart.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\chart.js\\Chart.bundle.min.js",
+      "PackagePath": "staticwebassets\\admin\\chart.js\\Chart.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\chart.js\\Chart.js",
+      "PackagePath": "staticwebassets\\admin\\chart.js\\Chart.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\chart.js\\Chart.min.js",
+      "PackagePath": "staticwebassets\\admin\\chart.js\\Chart.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\datatables\\dataTables.bootstrap4.css",
+      "PackagePath": "staticwebassets\\admin\\datatables\\dataTables.bootstrap4.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\datatables\\dataTables.bootstrap4.js",
+      "PackagePath": "staticwebassets\\admin\\datatables\\dataTables.bootstrap4.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\datatables\\dataTables.bootstrap4.min.css",
+      "PackagePath": "staticwebassets\\admin\\datatables\\dataTables.bootstrap4.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\datatables\\dataTables.bootstrap4.min.js",
+      "PackagePath": "staticwebassets\\admin\\datatables\\dataTables.bootstrap4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\datatables\\jquery.dataTables.js",
+      "PackagePath": "staticwebassets\\admin\\datatables\\jquery.dataTables.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\datatables\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\admin\\datatables\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\jquery-easing\\jquery.easing.compatibility.js",
+      "PackagePath": "staticwebassets\\admin\\jquery-easing\\jquery.easing.compatibility.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\jquery-easing\\jquery.easing.js",
+      "PackagePath": "staticwebassets\\admin\\jquery-easing\\jquery.easing.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\jquery-easing\\jquery.easing.min.js",
+      "PackagePath": "staticwebassets\\admin\\jquery-easing\\jquery.easing.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\admin\\jquery\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\jquery\\jquery.min.js",
+      "PackagePath": "staticwebassets\\admin\\jquery\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\jquery\\jquery.min.map",
+      "PackagePath": "staticwebassets\\admin\\jquery\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\jquery\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\admin\\jquery\\jquery.slim.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\jquery\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\admin\\jquery\\jquery.slim.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\admin\\jquery\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\admin\\jquery\\jquery.slim.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\css\\sb-admin-2.css",
+      "PackagePath": "staticwebassets\\css\\sb-admin-2.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\css\\style2.css",
+      "PackagePath": "staticwebassets\\css\\style2.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\css\\style\\.DS_Store",
+      "PackagePath": "staticwebassets\\css\\style\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\css\\style\\availability-calendar.css",
+      "PackagePath": "staticwebassets\\css\\style\\availability-calendar.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\css\\style\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\style\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\css\\style\\bootstrap.map",
+      "PackagePath": "staticwebassets\\css\\style\\bootstrap.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\css\\style\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\style\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\css\\style\\ion.rangeSlider.css",
+      "PackagePath": "staticwebassets\\css\\style\\ion.rangeSlider.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\css\\style\\ion.rangeSlider.skinFlat.css",
+      "PackagePath": "staticwebassets\\css\\style\\ion.rangeSlider.skinFlat.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\css\\style\\jquerysctipttop.css",
+      "PackagePath": "staticwebassets\\css\\style\\jquerysctipttop.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\css\\style\\linearicons.css",
+      "PackagePath": "staticwebassets\\css\\style\\linearicons.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\css\\style\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\css\\style\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\css\\style\\main.css",
+      "PackagePath": "staticwebassets\\css\\style\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\css\\style\\main.css.map",
+      "PackagePath": "staticwebassets\\css\\style\\main.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\css\\style\\main.map",
+      "PackagePath": "staticwebassets\\css\\style\\main.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\css\\style\\nice-select.css",
+      "PackagePath": "staticwebassets\\css\\style\\nice-select.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\css\\style\\nouislider.min.css",
+      "PackagePath": "staticwebassets\\css\\style\\nouislider.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\css\\style\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\css\\style\\owl.carousel.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\css\\style\\themify-icons.css",
+      "PackagePath": "staticwebassets\\css\\style\\themify-icons.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\.DS_Store",
+      "PackagePath": "staticwebassets\\images\\.DS_Store"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\1381912-001-1_fa412c49-4a97-4352-ad66-8746dcf24a4b.webp",
+      "PackagePath": "staticwebassets\\images\\1381912-001-1_fa412c49-4a97-4352-ad66-8746dcf24a4b.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\1381912-001-2_2fb4e5d2-eaf4-42d4-859b-5f2720b7cb06.jpg",
+      "PackagePath": "staticwebassets\\images\\1381912-001-2_2fb4e5d2-eaf4-42d4-859b-5f2720b7cb06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\1381912-001-5_b95e7eb4-6a96-411b-9712-a9f30a9cd0cf.jpg",
+      "PackagePath": "staticwebassets\\images\\1381912-001-5_b95e7eb4-6a96-411b-9712-a9f30a9cd0cf.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\1381912-001-6_497d76a2-acfe-4f08-9ceb-405e4faee93d.webp",
+      "PackagePath": "staticwebassets\\images\\1381912-001-6_497d76a2-acfe-4f08-9ceb-405e4faee93d.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\1381912-001-6_bb961bf8-fce6-4717-8778-33de28351c03.webp",
+      "PackagePath": "staticwebassets\\images\\1381912-001-6_bb961bf8-fce6-4717-8778-33de28351c03.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\1840131101-1_846204d6-ec72-467b-aecf-54cc95b1d60f.webp",
+      "PackagePath": "staticwebassets\\images\\1840131101-1_846204d6-ec72-467b-aecf-54cc95b1d60f.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\1840131101-2_fa4a8f43-b173-4195-a821-9bf764e17d8c.webp",
+      "PackagePath": "staticwebassets\\images\\1840131101-2_fa4a8f43-b173-4195-a821-9bf764e17d8c.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\1_df3db0a7cfad460cad99d5d052a0488a_master_6f6e6f73-d765-4607-821d-6a8d647789be.webp",
+      "PackagePath": "staticwebassets\\images\\1_df3db0a7cfad460cad99d5d052a0488a_master_6f6e6f73-d765-4607-821d-6a8d647789be.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\2032011191-1_ffe984b3-4737-43cc-bba4-7270b03f5d52_936a0ea9-f81c-4aa5-89a5-3a5c7f204f87.webp",
+      "PackagePath": "staticwebassets\\images\\2032011191-1_ffe984b3-4737-43cc-bba4-7270b03f5d52_936a0ea9-f81c-4aa5-89a5-3a5c7f204f87.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\2032011191-2_da90348a-f41a-43c5-94f7-d2c3b313a35d_eecb01cd-4443-41b4-8040-919ee6bdff7b.webp",
+      "PackagePath": "staticwebassets\\images\\2032011191-2_da90348a-f41a-43c5-94f7-d2c3b313a35d_eecb01cd-4443-41b4-8040-919ee6bdff7b.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\2_bc680a85642541429055b89427426923_master_80329b72-e3a5-4318-9468-67e02d73f70d.webp",
+      "PackagePath": "staticwebassets\\images\\2_bc680a85642541429055b89427426923_master_80329b72-e3a5-4318-9468-67e02d73f70d.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\3_24796ba2df244f6e83b98202e00352cb_master_647c45d9-fe57-4411-a772-611d3efadd62.webp",
+      "PackagePath": "staticwebassets\\images\\3_24796ba2df244f6e83b98202e00352cb_master_647c45d9-fe57-4411-a772-611d3efadd62.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\464001-1_e9495a54-9341-43eb-9bc0-42815a8c89ef.webp",
+      "PackagePath": "staticwebassets\\images\\464001-1_e9495a54-9341-43eb-9bc0-42815a8c89ef.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\464001-2_a3d06a75-5954-4b0e-88f4-20bd68974cf9_3da0bbd1-5c29-4378-aacf-6b72984bb747.webp",
+      "PackagePath": "staticwebassets\\images\\464001-2_a3d06a75-5954-4b0e-88f4-20bd68974cf9_3da0bbd1-5c29-4378-aacf-6b72984bb747.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\464001-3_467fc797-ef0e-4ec8-af10-ebe034f63a63_ed82e3de-f390-46a2-8e8f-5b858206bed2.webp",
+      "PackagePath": "staticwebassets\\images\\464001-3_467fc797-ef0e-4ec8-af10-ebe034f63a63_ed82e3de-f390-46a2-8e8f-5b858206bed2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\464001-4_326e51e7-373f-47bd-9e1b-e253ec4a4cf4_dceb79ed-3d29-4ec6-8535-a3c5508a0b03.webp",
+      "PackagePath": "staticwebassets\\images\\464001-4_326e51e7-373f-47bd-9e1b-e253ec4a4cf4_dceb79ed-3d29-4ec6-8535-a3c5508a0b03.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\EU-VENUM-1109-1_0f522dc8-ebc1-45e6-8e1d-e26dc0d4fccb_c95a4bec-1470-4caf-916d-4dc1cdd48b24.webp",
+      "PackagePath": "staticwebassets\\images\\EU-VENUM-1109-1_0f522dc8-ebc1-45e6-8e1d-e26dc0d4fccb_c95a4bec-1470-4caf-916d-4dc1cdd48b24.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\EU-VENUM-1109-2_e21e5a2f-56f2-4e2b-82fa-891469a27ee1_463ca341-9431-465a-ad6f-6ea879350fa0.webp",
+      "PackagePath": "staticwebassets\\images\\EU-VENUM-1109-2_e21e5a2f-56f2-4e2b-82fa-891469a27ee1_463ca341-9431-465a-ad6f-6ea879350fa0.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\EU-VENUM-1109-3_b5e5fca6-8284-4696-8f0e-74b1f8deafdd_5e1cd979-0caa-4b17-a277-d436c088d487.webp",
+      "PackagePath": "staticwebassets\\images\\EU-VENUM-1109-3_b5e5fca6-8284-4696-8f0e-74b1f8deafdd_5e1cd979-0caa-4b17-a277-d436c088d487.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\EU-VENUM-1109-4_7e20cac2-efdd-470a-8ce9-bee256f30d7f_ecc39937-456b-4d17-81ab-893d34da3fd9.webp",
+      "PackagePath": "staticwebassets\\images\\EU-VENUM-1109-4_7e20cac2-efdd-470a-8ce9-bee256f30d7f_ecc39937-456b-4d17-81ab-893d34da3fd9.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\FS2RSG2331X-WHI-1_d58248b3-afad-4883-8c16-2d659c593b63.webp",
+      "PackagePath": "staticwebassets\\images\\FS2RSG2331X-WHI-1_d58248b3-afad-4883-8c16-2d659c593b63.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\FS2RSG2331X-WHI-2_ef93d392-a3eb-4125-8a74-e15d70fb148f.webp",
+      "PackagePath": "staticwebassets\\images\\FS2RSG2331X-WHI-2_ef93d392-a3eb-4125-8a74-e15d70fb148f.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\FS2RSG2331X-WHI-4_a25b4929-cad4-45c3-872b-fb26d7044ecc.webp",
+      "PackagePath": "staticwebassets\\images\\FS2RSG2331X-WHI-4_a25b4929-cad4-45c3-872b-fb26d7044ecc.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\FS2RSG2331X-WHI-5_1a361cde-f271-48c3-98c7-6bd9ee576f24.webp",
+      "PackagePath": "staticwebassets\\images\\FS2RSG2331X-WHI-5_1a361cde-f271-48c3-98c7-6bd9ee576f24.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\FS2RSG2331X-WHI-8_5678b530-dd25-4589-91a6-2d30085bbcbc.webp",
+      "PackagePath": "staticwebassets\\images\\FS2RSG2331X-WHI-8_5678b530-dd25-4589-91a6-2d30085bbcbc.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\IG3320-1_73fcc57c-0f18-4400-8a1a-fa9aec29911b.webp",
+      "PackagePath": "staticwebassets\\images\\IG3320-1_73fcc57c-0f18-4400-8a1a-fa9aec29911b.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\IG3320-2_495d1878-e8bf-4056-9af8-d2ecf6b8b697.webp",
+      "PackagePath": "staticwebassets\\images\\IG3320-2_495d1878-e8bf-4056-9af8-d2ecf6b8b697.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\IG3320-4_c564a47c-099c-45c5-9885-71f51e07226e.webp",
+      "PackagePath": "staticwebassets\\images\\IG3320-4_c564a47c-099c-45c5-9885-71f51e07226e.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\IG3320-6_c8a5d8d9-0a5e-4510-ad42-ceeff7c11b42.webp",
+      "PackagePath": "staticwebassets\\images\\IG3320-6_c8a5d8d9-0a5e-4510-ad42-ceeff7c11b42.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\IG3320-7_dfb11815-8a50-408f-b6c8-297d91114d24.webp",
+      "PackagePath": "staticwebassets\\images\\IG3320-7_dfb11815-8a50-408f-b6c8-297d91114d24.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\IN9368-1_b918e6ed-4a17-4176-b164-14dfa087d746.webp",
+      "PackagePath": "staticwebassets\\images\\IN9368-1_b918e6ed-4a17-4176-b164-14dfa087d746.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\IN9368-2_301a0d9a-d353-46ab-bb44-c8c3f55896c3.webp",
+      "PackagePath": "staticwebassets\\images\\IN9368-2_301a0d9a-d353-46ab-bb44-c8c3f55896c3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\IN9368-3_781c0ace-0235-4383-8ed2-e97829d46305.webp",
+      "PackagePath": "staticwebassets\\images\\IN9368-3_781c0ace-0235-4383-8ed2-e97829d46305.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\IN9368-4_c86b40fe-bc63-4063-abd0-c8ab7feba0c3.webp",
+      "PackagePath": "staticwebassets\\images\\IN9368-4_c86b40fe-bc63-4063-abd0-c8ab7feba0c3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\IP8139-1_7b00842a-4021-49fe-9bee-7e58fd1bc5a4.webp",
+      "PackagePath": "staticwebassets\\images\\IP8139-1_7b00842a-4021-49fe-9bee-7e58fd1bc5a4.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\IP8139-2_6759becb-80a5-42e6-b4f3-7c5f9f337f6f.webp",
+      "PackagePath": "staticwebassets\\images\\IP8139-2_6759becb-80a5-42e6-b4f3-7c5f9f337f6f.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\IP8139-3_05dcc023-1059-4967-8925-34618e1d183a.webp",
+      "PackagePath": "staticwebassets\\images\\IP8139-3_05dcc023-1059-4967-8925-34618e1d183a.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\IP8139-5_161722a5-d9ac-4fc3-809e-c01c0c789c42.webp",
+      "PackagePath": "staticwebassets\\images\\IP8139-5_161722a5-d9ac-4fc3-809e-c01c0c789c42.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\IP8139-6_d84357fd-aeba-4f16-a142-8fe3721d72c7.webp",
+      "PackagePath": "staticwebassets\\images\\IP8139-6_d84357fd-aeba-4f16-a142-8fe3721d72c7.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\IP8139-7_893f04a4-42e8-425e-9bda-47d8358a72f3.webp",
+      "PackagePath": "staticwebassets\\images\\IP8139-7_893f04a4-42e8-425e-9bda-47d8358a72f3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\OIP.jpg",
+      "PackagePath": "staticwebassets\\images\\OIP.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\OMEGA-Z_01-1_0f1f6d47-b3b1-49bb-8402-afd771f97d01.webp",
+      "PackagePath": "staticwebassets\\images\\OMEGA-Z_01-1_0f1f6d47-b3b1-49bb-8402-afd771f97d01.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\OMEGA-Z_01-2_2145e1c7-4655-4ee1-b51f-3fc4d459db05.webp",
+      "PackagePath": "staticwebassets\\images\\OMEGA-Z_01-2_2145e1c7-4655-4ee1-b51f-3fc4d459db05.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\OMEGA-Z_01-3_1199f419-3c5c-469d-bb5f-992d45269eae.webp",
+      "PackagePath": "staticwebassets\\images\\OMEGA-Z_01-3_1199f419-3c5c-469d-bb5f-992d45269eae.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\OMEGA-Z_01-4_4fc4b80e-b89e-4124-998d-e0c19022bcc3.webp",
+      "PackagePath": "staticwebassets\\images\\OMEGA-Z_01-4_4fc4b80e-b89e-4124-998d-e0c19022bcc3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\OMEGA-Z_01-5_b7745b78-d98b-4ed3-bf5b-f292fe38ade8.webp",
+      "PackagePath": "staticwebassets\\images\\OMEGA-Z_01-5_b7745b78-d98b-4ed3-bf5b-f292fe38ade8.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\OMEGA-Z_01-6_82788462-4a47-4b77-b65b-b89a209b2c69.webp",
+      "PackagePath": "staticwebassets\\images\\OMEGA-Z_01-6_82788462-4a47-4b77-b65b-b89a209b2c69.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\VENUM-03525-520-1_371a258a-7042-42fa-9ccd-0415f35fca35_ebbffd1e-4d6e-47f8-86f8-e56426a004a3.webp",
+      "PackagePath": "staticwebassets\\images\\VENUM-03525-520-1_371a258a-7042-42fa-9ccd-0415f35fca35_ebbffd1e-4d6e-47f8-86f8-e56426a004a3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\VENUM-03525-520-3_42c29e73-7b94-4b6e-9e42-eeacd902dc72_802f76ab-b6ea-4ad0-8aae-dcfd9955fa3c.webp",
+      "PackagePath": "staticwebassets\\images\\VENUM-03525-520-3_42c29e73-7b94-4b6e-9e42-eeacd902dc72_802f76ab-b6ea-4ad0-8aae-dcfd9955fa3c.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\VENUM-03525-520-4_bda256ca-7ebd-44ff-93fc-c604465b7da3_96bb3af9-a8e7-44b3-908d-faaea78bd1d2.webp",
+      "PackagePath": "staticwebassets\\images\\VENUM-03525-520-4_bda256ca-7ebd-44ff-93fc-c604465b7da3_96bb3af9-a8e7-44b3-908d-faaea78bd1d2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\VENUM-03525-520-5_589f5bb2-7afd-46b9-a896-f74d28967124_dc907a14-df35-4ebc-ac4b-71c9b9af321c.webp",
+      "PackagePath": "staticwebassets\\images\\VENUM-03525-520-5_589f5bb2-7afd-46b9-a896-f74d28967124_dc907a14-df35-4ebc-ac4b-71c9b9af321c.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\VNMUFC-00068-001-1_002fbb5f-d83d-4ac2-b576-0fb427b0a2ee_4487beb9-c73c-489b-a116-09fad90393a0.webp",
+      "PackagePath": "staticwebassets\\images\\VNMUFC-00068-001-1_002fbb5f-d83d-4ac2-b576-0fb427b0a2ee_4487beb9-c73c-489b-a116-09fad90393a0.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\VNMUFC-00068-001-2_3c73ce0e-7ede-4761-bb8b-79d58809ba50_b2dcbfcb-ef74-43da-b896-c9cfbff7bad5.webp",
+      "PackagePath": "staticwebassets\\images\\VNMUFC-00068-001-2_3c73ce0e-7ede-4761-bb8b-79d58809ba50_b2dcbfcb-ef74-43da-b896-c9cfbff7bad5.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\VNMUFC-00068-001-3_ab790e7b-3613-4612-a80a-4ecb4157c256_50d18eac-694b-4578-8aea-01a06a071be7.webp",
+      "PackagePath": "staticwebassets\\images\\VNMUFC-00068-001-3_ab790e7b-3613-4612-a80a-4ecb4157c256_50d18eac-694b-4578-8aea-01a06a071be7.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\VNMUFC-00068-001-5_0cc30e49-5c5b-479d-bd51-92c59f452e52_a52b5781-0bcb-4447-89a3-9d6e5188d733.webp",
+      "PackagePath": "staticwebassets\\images\\VNMUFC-00068-001-5_0cc30e49-5c5b-479d-bd51-92c59f452e52_a52b5781-0bcb-4447-89a3-9d6e5188d733.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\VNMUFC-00068-001-6_82198474-6758-4c6c-90fb-8f7bb5428d77_dc2a2fbc-8f5e-4280-b384-207017a867a7.webp",
+      "PackagePath": "staticwebassets\\images\\VNMUFC-00068-001-6_82198474-6758-4c6c-90fb-8f7bb5428d77_dc2a2fbc-8f5e-4280-b384-207017a867a7.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\bag.svg",
+      "PackagePath": "staticwebassets\\images\\bag.svg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\banner\\Brooks_New_Brand_1545x500_V.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\Brooks_New_Brand_1545x500_V.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\banner\\banner-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\banner-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\banner\\banner-img.png",
+      "PackagePath": "staticwebassets\\images\\banner\\banner-img.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\banner\\common-banner.jpg",
+      "PackagePath": "staticwebassets\\images\\banner\\common-banner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\banner\\next.png",
+      "PackagePath": "staticwebassets\\images\\banner\\next.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\banner\\prev.png",
+      "PackagePath": "staticwebassets\\images\\banner\\prev.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\add.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\add.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\author.png",
+      "PackagePath": "staticwebassets\\images\\blog\\author.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\c1.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\c1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\c2.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\c2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\c3.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\c3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\c4.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\c4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\c5.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\c5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\c6.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\c6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\cat-post\\cat-post-1.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\cat-post\\cat-post-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\cat-post\\cat-post-2.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\cat-post\\cat-post-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\cat-post\\cat-post-3.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\cat-post\\cat-post-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\causes\\causes-1.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\causes\\causes-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\causes\\causes-2.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\causes\\causes-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\causes\\causes-3.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\causes\\causes-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\feature-img1.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\feature-img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\latest-post\\l-post-1.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\latest-post\\l-post-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\latest-post\\l-post-2.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\latest-post\\l-post-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\latest-post\\l-post-3.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\latest-post\\l-post-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\latest-post\\l-post-4.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\latest-post\\l-post-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\main-blog\\m-blog-1.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\main-blog\\m-blog-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\main-blog\\m-blog-2.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\main-blog\\m-blog-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\main-blog\\m-blog-3.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\main-blog\\m-blog-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\main-blog\\m-blog-4.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\main-blog\\m-blog-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\main-blog\\m-blog-5.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\main-blog\\m-blog-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\next.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\next.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\popular-post\\post1.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\popular-post\\post1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\popular-post\\post2.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\popular-post\\post2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\popular-post\\post3.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\popular-post\\post3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\popular-post\\post4.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\popular-post\\post4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\post-img1.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\post-img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\post-img2.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\post-img2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\blog\\prev.jpg",
+      "PackagePath": "staticwebassets\\images\\blog\\prev.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\bowl-3.png",
+      "PackagePath": "staticwebassets\\images\\bowl-3.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\brand\\1.png",
+      "PackagePath": "staticwebassets\\images\\brand\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\brand\\2.png",
+      "PackagePath": "staticwebassets\\images\\brand\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\brand\\3.png",
+      "PackagePath": "staticwebassets\\images\\brand\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\brand\\4.png",
+      "PackagePath": "staticwebassets\\images\\brand\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\brand\\5.png",
+      "PackagePath": "staticwebassets\\images\\brand\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\cart.jpg",
+      "PackagePath": "staticwebassets\\images\\cart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\cart.svg",
+      "PackagePath": "staticwebassets\\images\\cart.svg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\category\\block_home_category5.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\block_home_category5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\category\\block_home_category6.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\block_home_category6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\category\\block_home_category7.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\block_home_category7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\category\\block_home_category8.jpg",
+      "PackagePath": "staticwebassets\\images\\category\\block_home_category8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\category\\collection_one_img.webp",
+      "PackagePath": "staticwebassets\\images\\category\\collection_one_img.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\cross.svg",
+      "PackagePath": "staticwebassets\\images\\cross.svg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\die_mannschaft__1_-min_a1a5b7d58601434aa44bb43780be622c_master_740acef1-9340-457b-9e90-d29ab4ae0fd9.webp",
+      "PackagePath": "staticwebassets\\images\\die_mannschaft__1_-min_a1a5b7d58601434aa44bb43780be622c_master_740acef1-9340-457b-9e90-d29ab4ae0fd9.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\die_mannschaft__2_-min_26c53f18fdfc4adf80ad147cbe1565b9_master_c4695f8b-fd53-4c6f-a8ce-1fe1fc9d843b.webp",
+      "PackagePath": "staticwebassets\\images\\die_mannschaft__2_-min_26c53f18fdfc4adf80ad147cbe1565b9_master_c4695f8b-fd53-4c6f-a8ce-1fe1fc9d843b.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\die_mannschaft__3_-min_29874795930f42af86dadd2e9c3a1177_master_044f5a18-9101-40c1-a2aa-fe228ead5c1b.webp",
+      "PackagePath": "staticwebassets\\images\\die_mannschaft__3_-min_29874795930f42af86dadd2e9c3a1177_master_044f5a18-9101-40c1-a2aa-fe228ead5c1b.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\dots-green.svg",
+      "PackagePath": "staticwebassets\\images\\dots-green.svg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\dots-light.svg",
+      "PackagePath": "staticwebassets\\images\\dots-light.svg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\dots-yellow.svg",
+      "PackagePath": "staticwebassets\\images\\dots-yellow.svg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\dsc07494_1a628aea2ff443c1bb1147a3e3391542_master_f2869a11-e704-4308-b9dd-cdaa41a4fcd6.webp",
+      "PackagePath": "staticwebassets\\images\\dsc07494_1a628aea2ff443c1bb1147a3e3391542_master_f2869a11-e704-4308-b9dd-cdaa41a4fcd6.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\dsc07506_541a9e1cb72c48c18d19afdab28f1e51_master_6e440160-5121-46e9-b01d-9ab1423b4668.webp",
+      "PackagePath": "staticwebassets\\images\\dsc07506_541a9e1cb72c48c18d19afdab28f1e51_master_6e440160-5121-46e9-b01d-9ab1423b4668.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\dsc07562_d56156c41f034e46b827f175c86808fc_master_b84e1a00-dcc3-4cd9-a020-77e4fdd829a2.webp",
+      "PackagePath": "staticwebassets\\images\\dsc07562_d56156c41f034e46b827f175c86808fc_master_b84e1a00-dcc3-4cd9-a020-77e4fdd829a2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\dsc07580_9e42a76185674c84a9620e5a782d405f_master_8888c991-34c0-443b-8cfb-caca453405ec.webp",
+      "PackagePath": "staticwebassets\\images\\dsc07580_9e42a76185674c84a9620e5a782d405f_master_8888c991-34c0-443b-8cfb-caca453405ec.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\dsc07659_c4f45cad558f46f691b92e51200495dd_master_befe9387-1cc9-4d36-a5f7-ce68f8f1561f.webp",
+      "PackagePath": "staticwebassets\\images\\dsc07659_c4f45cad558f46f691b92e51200495dd_master_befe9387-1cc9-4d36-a5f7-ce68f8f1561f.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\elements\\d.jpg",
+      "PackagePath": "staticwebassets\\images\\elements\\d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\elements\\disabled-check.png",
+      "PackagePath": "staticwebassets\\images\\elements\\disabled-check.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\elements\\disabled-radio.png",
+      "PackagePath": "staticwebassets\\images\\elements\\disabled-radio.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\elements\\f1.jpg",
+      "PackagePath": "staticwebassets\\images\\elements\\f1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\elements\\f2.jpg",
+      "PackagePath": "staticwebassets\\images\\elements\\f2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\elements\\f3.jpg",
+      "PackagePath": "staticwebassets\\images\\elements\\f3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\elements\\f4.jpg",
+      "PackagePath": "staticwebassets\\images\\elements\\f4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\elements\\f5.jpg",
+      "PackagePath": "staticwebassets\\images\\elements\\f5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\elements\\f6.jpg",
+      "PackagePath": "staticwebassets\\images\\elements\\f6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\elements\\f7.jpg",
+      "PackagePath": "staticwebassets\\images\\elements\\f7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\elements\\f8.jpg",
+      "PackagePath": "staticwebassets\\images\\elements\\f8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\elements\\g1.jpg",
+      "PackagePath": "staticwebassets\\images\\elements\\g1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\elements\\g2.jpg",
+      "PackagePath": "staticwebassets\\images\\elements\\g2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\elements\\g3.jpg",
+      "PackagePath": "staticwebassets\\images\\elements\\g3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\elements\\g4.jpg",
+      "PackagePath": "staticwebassets\\images\\elements\\g4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\elements\\g5.jpg",
+      "PackagePath": "staticwebassets\\images\\elements\\g5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\elements\\g6.jpg",
+      "PackagePath": "staticwebassets\\images\\elements\\g6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\elements\\g7.jpg",
+      "PackagePath": "staticwebassets\\images\\elements\\g7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\elements\\g8.jpg",
+      "PackagePath": "staticwebassets\\images\\elements\\g8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\elements\\primary-check.png",
+      "PackagePath": "staticwebassets\\images\\elements\\primary-check.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\elements\\primary-radio.png",
+      "PackagePath": "staticwebassets\\images\\elements\\primary-radio.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\elements\\success-check.png",
+      "PackagePath": "staticwebassets\\images\\elements\\success-check.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\elements\\success-radio.png",
+      "PackagePath": "staticwebassets\\images\\elements\\success-radio.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\envelope-outline.svg",
+      "PackagePath": "staticwebassets\\images\\envelope-outline.svg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\exclusive.jpg",
+      "PackagePath": "staticwebassets\\images\\exclusive.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\fav.png",
+      "PackagePath": "staticwebassets\\images\\fav.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\favicon.ico",
+      "PackagePath": "staticwebassets\\images\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\features\\f-icon1.png",
+      "PackagePath": "staticwebassets\\images\\features\\f-icon1.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\features\\f-icon2.png",
+      "PackagePath": "staticwebassets\\images\\features\\f-icon2.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\features\\f-icon3.png",
+      "PackagePath": "staticwebassets\\images\\features\\f-icon3.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\features\\f-icon4.png",
+      "PackagePath": "staticwebassets\\images\\features\\f-icon4.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\flash_light-01_aea13538e8cf43cd89bcd073165d3a3a_master_d6f44374-bca1-45f1-b1e3-20e6d0b1af69.webp",
+      "PackagePath": "staticwebassets\\images\\flash_light-01_aea13538e8cf43cd89bcd073165d3a3a_master_d6f44374-bca1-45f1-b1e3-20e6d0b1af69.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\flash_light-02_3682aabd3964467da8bd568ba6b4027a_master_1716b599-18e8-49eb-9e50-cc8f7ed5a6c7.webp",
+      "PackagePath": "staticwebassets\\images\\flash_light-02_3682aabd3964467da8bd568ba6b4027a_master_1716b599-18e8-49eb-9e50-cc8f7ed5a6c7.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\flash_light-03_8280ade4bebc48d9bc826b4a659c1497_master_89896911-7ff7-4f27-b7f0-7c716b56a5f3.webp",
+      "PackagePath": "staticwebassets\\images\\flash_light-03_8280ade4bebc48d9bc826b4a659c1497_master_89896911-7ff7-4f27-b7f0-7c716b56a5f3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\flash_light-04_14f1a32b19474a48a961f36c40bcc6f7_master_33ee4f9c-5fa5-48be-843b-ae2b2c2dbb9d.jpg",
+      "PackagePath": "staticwebassets\\images\\flash_light-04_14f1a32b19474a48a961f36c40bcc6f7_master_33ee4f9c-5fa5-48be-843b-ae2b2c2dbb9d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\flashlight-11_d44ba7a182e34de9ac1e3a4ca81dcca3_master_451715ec-d2b5-4a1f-875a-bb294645311f.webp",
+      "PackagePath": "staticwebassets\\images\\flashlight-11_d44ba7a182e34de9ac1e3a4ca81dcca3_master_451715ec-d2b5-4a1f-875a-bb294645311f.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\kamito_0006_9cbfb8a3ea0041e1996da8161c567354_master_e59e8bcc-abbf-4668-9724-0691985847d9.jpg",
+      "PackagePath": "staticwebassets\\images\\kamito_0006_9cbfb8a3ea0041e1996da8161c567354_master_e59e8bcc-abbf-4668-9724-0691985847d9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\kamito_0421-min_optimized_5ce817992e794f6285056120601e8b72_compact_3e764e1d-2aff-4eea-adeb-291bfa1cbb52.webp",
+      "PackagePath": "staticwebassets\\images\\kamito_0421-min_optimized_5ce817992e794f6285056120601e8b72_compact_3e764e1d-2aff-4eea-adeb-291bfa1cbb52.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\kamito_4128-min_optimized_ef4af4c30ed142afbaee009982ef0019_master_3ea473d7-abcf-457e-a14c-67afd767cccb.webp",
+      "PackagePath": "staticwebassets\\images\\kamito_4128-min_optimized_ef4af4c30ed142afbaee009982ef0019_master_3ea473d7-abcf-457e-a14c-67afd767cccb.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\kamito_5167-min_optimized_e32fe58c1cfb4a7083d0ff04dabba4b8_compact_06340c21-cf9f-4a79-9eee-70b1277ab4ce.webp",
+      "PackagePath": "staticwebassets\\images\\kamito_5167-min_optimized_e32fe58c1cfb4a7083d0ff04dabba4b8_compact_06340c21-cf9f-4a79-9eee-70b1277ab4ce.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\kamito_6266_1d4f444b150b4c28927cd729844d6faf_master_27616317-6653-427e-b4cb-e778144a65a7.webp",
+      "PackagePath": "staticwebassets\\images\\kamito_6266_1d4f444b150b4c28927cd729844d6faf_master_27616317-6653-427e-b4cb-e778144a65a7.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\kmap221590_6a752146200c43b5b3ab69f73dffd09e_master_143e8b58-0b40-4de8-a812-80e337289d32.webp",
+      "PackagePath": "staticwebassets\\images\\kmap221590_6a752146200c43b5b3ab69f73dffd09e_master_143e8b58-0b40-4de8-a812-80e337289d32.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\kmap221590_6a752146200c43b5b3ab69f73dffd09e_master_f603067b-d7cf-4580-b442-602f74f7157e.webp",
+      "PackagePath": "staticwebassets\\images\\kmap221590_6a752146200c43b5b3ab69f73dffd09e_master_f603067b-d7cf-4580-b442-602f74f7157e.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\l1.jpg",
+      "PackagePath": "staticwebassets\\images\\l1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\l2.jpg",
+      "PackagePath": "staticwebassets\\images\\l2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\l3.jpg",
+      "PackagePath": "staticwebassets\\images\\l3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\l4.jpg",
+      "PackagePath": "staticwebassets\\images\\l4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\l5.jpg",
+      "PackagePath": "staticwebassets\\images\\l5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\l6.jpg",
+      "PackagePath": "staticwebassets\\images\\l6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\l7.jpg",
+      "PackagePath": "staticwebassets\\images\\l7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\l8.jpg",
+      "PackagePath": "staticwebassets\\images\\l8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\les_bleus_2012__1__c81715c56e5c46679e296d26ba6690d8_master_7a839b84-a39f-44e5-a970-83a61c5ce9ba.webp",
+      "PackagePath": "staticwebassets\\images\\les_bleus_2012__1__c81715c56e5c46679e296d26ba6690d8_master_7a839b84-a39f-44e5-a970-83a61c5ce9ba.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\les_bleus_2012__2__2b6d10e03c8b44c6a64ba45571216a07_master_42963b95-c773-42c0-b1e8-194ac61d44b8.webp",
+      "PackagePath": "staticwebassets\\images\\les_bleus_2012__2__2b6d10e03c8b44c6a64ba45571216a07_master_42963b95-c773-42c0-b1e8-194ac61d44b8.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\les_bleus_2012__3__cfcc8c56ef364fa580b59ff7c4060c19_master_a15b4514-7ac6-4c27-9585-383d6321e52a.webp",
+      "PackagePath": "staticwebassets\\images\\les_bleus_2012__3__cfcc8c56ef364fa580b59ff7c4060c19_master_a15b4514-7ac6-4c27-9585-383d6321e52a.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\login.jpg",
+      "PackagePath": "staticwebassets\\images\\login.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\men-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\men-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\mid05319_8109e4f3dad94cc6b8ca9f7bbf8c00fd_master_ad68b9b4-721b-48f4-ba76-9323607e604d.webp",
+      "PackagePath": "staticwebassets\\images\\mid05319_8109e4f3dad94cc6b8ca9f7bbf8c00fd_master_ad68b9b4-721b-48f4-ba76-9323607e604d.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\mid05328_ce632a5121e34bbabf5f12d5f86be339_master_bbc33cd7-54fa-408b-9c01-88e288063878.webp",
+      "PackagePath": "staticwebassets\\images\\mid05328_ce632a5121e34bbabf5f12d5f86be339_master_bbc33cd7-54fa-408b-9c01-88e288063878.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\mid07291_6ac4144790fb4a0cafefbbc6ddb79dd3_master_da97ca97-2810-445c-a980-0f2624f6c4aa.webp",
+      "PackagePath": "staticwebassets\\images\\mid07291_6ac4144790fb4a0cafefbbc6ddb79dd3_master_da97ca97-2810-445c-a980-0f2624f6c4aa.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\mid07292_6a161c32a7f2423bac40d3da2e5c15cd_master_8e3d1f45-acf4-4bfc-a0bf-f341c18754e6.webp",
+      "PackagePath": "staticwebassets\\images\\mid07292_6a161c32a7f2423bac40d3da2e5c15cd_master_8e3d1f45-acf4-4bfc-a0bf-f341c18754e6.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\mid07293_06eff13b4cba4b65b46bb59896672aea_master_c1f12859-0288-43df-98f3-3d3842502b8a.webp",
+      "PackagePath": "staticwebassets\\images\\mid07293_06eff13b4cba4b65b46bb59896672aea_master_c1f12859-0288-43df-98f3-3d3842502b8a.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\mid07294_b17227ff1226451f985e7f2c35222e3a_master_29d9484e-1559-429b-804d-9b17b0f7bdc9.webp",
+      "PackagePath": "staticwebassets\\images\\mid07294_b17227ff1226451f985e7f2c35222e3a_master_29d9484e-1559-429b-804d-9b17b0f7bdc9.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\nike-running-shoes.jpg",
+      "PackagePath": "staticwebassets\\images\\nike-running-shoes.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\ob1.jpg",
+      "PackagePath": "staticwebassets\\images\\ob1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\ob2.jpg",
+      "PackagePath": "staticwebassets\\images\\ob2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\ob3.jpg",
+      "PackagePath": "staticwebassets\\images\\ob3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\product\\card.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\card.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\product\\e-p1.png",
+      "PackagePath": "staticwebassets\\images\\product\\e-p1.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\product\\next.png",
+      "PackagePath": "staticwebassets\\images\\product\\next.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\product\\p1.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\p1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\product\\p2.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\p2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\product\\p3.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\p3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\product\\p4.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\p4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\product\\p5.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\p5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\product\\p6.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\p6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\product\\p7.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\p7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\product\\p8.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\p8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\product\\prev.png",
+      "PackagePath": "staticwebassets\\images\\product\\prev.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\product\\review-1.png",
+      "PackagePath": "staticwebassets\\images\\product\\review-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\product\\review-2.png",
+      "PackagePath": "staticwebassets\\images\\product\\review-2.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\product\\review-3.png",
+      "PackagePath": "staticwebassets\\images\\product\\review-3.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\q1.jpg",
+      "PackagePath": "staticwebassets\\images\\q1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\r1.jpg",
+      "PackagePath": "staticwebassets\\images\\r1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\r10.jpg",
+      "PackagePath": "staticwebassets\\images\\r10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\r11.jpg",
+      "PackagePath": "staticwebassets\\images\\r11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\r12.jpg",
+      "PackagePath": "staticwebassets\\images\\r12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\r2.jpg",
+      "PackagePath": "staticwebassets\\images\\r2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\r3.jpg",
+      "PackagePath": "staticwebassets\\images\\r3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\r4.jpg",
+      "PackagePath": "staticwebassets\\images\\r4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\r5.jpg",
+      "PackagePath": "staticwebassets\\images\\r5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\r6.jpg",
+      "PackagePath": "staticwebassets\\images\\r6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\r7.jpg",
+      "PackagePath": "staticwebassets\\images\\r7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\r8.jpg",
+      "PackagePath": "staticwebassets\\images\\r8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\r9.jpg",
+      "PackagePath": "staticwebassets\\images\\r9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\return.svg",
+      "PackagePath": "staticwebassets\\images\\return.svg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\sport store.png",
+      "PackagePath": "staticwebassets\\images\\sport store.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\support.svg",
+      "PackagePath": "staticwebassets\\images\\support.svg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\tui-1_f30b236eb9e4481a9ce08e180eb3943f_master_af1c23ad-f984-4d60-9e06-ce7a2853a28a.webp",
+      "PackagePath": "staticwebassets\\images\\tui-1_f30b236eb9e4481a9ce08e180eb3943f_master_af1c23ad-f984-4d60-9e06-ce7a2853a28a.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\tui-2_7b291e457aa5424ba3a8f520cb6e7316_master_e58184bc-80b2-4af5-9588-66ffe63fbb79.webp",
+      "PackagePath": "staticwebassets\\images\\tui-2_7b291e457aa5424ba3a8f520cb6e7316_master_e58184bc-80b2-4af5-9588-66ffe63fbb79.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\tui-3_1d475cc5fd5e417ebb42a400cf32b698_master_4040a4f4-d1df-4d0d-8c92-a40e39ab77c5.webp",
+      "PackagePath": "staticwebassets\\images\\tui-3_1d475cc5fd5e417ebb42a400cf32b698_master_4040a4f4-d1df-4d0d-8c92-a40e39ab77c5.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\tui-4_6d8601f263e242df8e16f6636790262a_master_f9eb41b3-d705-4b77-9db5-7361158fcdc0.webp",
+      "PackagePath": "staticwebassets\\images\\tui-4_6d8601f263e242df8e16f6636790262a_master_f9eb41b3-d705-4b77-9db5-7361158fcdc0.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\user.svg",
+      "PackagePath": "staticwebassets\\images\\user.svg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\z4581588159915_1bbfb999999a8cd73acf3045dd711060_7f3bd346e51c4e96962350e0893b995d_master_ab97abb1-ca44-455a-be82-26e6615274b7.webp",
+      "PackagePath": "staticwebassets\\images\\z4581588159915_1bbfb999999a8cd73acf3045dd711060_7f3bd346e51c4e96962350e0893b995d_master_ab97abb1-ca44-455a-be82-26e6615274b7.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\js\\countdown.js",
+      "PackagePath": "staticwebassets\\js\\countdown.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\js\\ion.rangeSlider.js",
+      "PackagePath": "staticwebassets\\js\\ion.rangeSlider.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\js\\jquery.ajaxchimp.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.ajaxchimp.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\js\\jquery.nice-select.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.nice-select.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\js\\jquery.sticky.js",
+      "PackagePath": "staticwebassets\\js\\jquery.sticky.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\js\\nouislider.min.js",
+      "PackagePath": "staticwebassets\\js\\nouislider.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\js\\parallax.min.js",
+      "PackagePath": "staticwebassets\\js\\parallax.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\js\\sb-admin-2.js",
+      "PackagePath": "staticwebassets\\js\\sb-admin-2.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\js\\sb-admin-2.min.js",
+      "PackagePath": "staticwebassets\\js\\sb-admin-2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\js\\vendor\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\vendor\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\js\\vendor\\jquery-2.2.4.min.js",
+      "PackagePath": "staticwebassets\\js\\vendor\\jquery-2.2.4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\js\\vendor\\popper.js",
+      "PackagePath": "staticwebassets\\js\\vendor\\popper.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\simplebar\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\simplebar"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\simplebar\\README.md",
+      "PackagePath": "staticwebassets\\lib\\simplebar\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\simplebar\\dist\\simplebar-core.esm.js",
+      "PackagePath": "staticwebassets\\lib\\simplebar\\dist\\simplebar-core.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\simplebar\\dist\\simplebar-core.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\simplebar\\dist\\simplebar-core.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\simplebar\\dist\\simplebar.css",
+      "PackagePath": "staticwebassets\\lib\\simplebar\\dist\\simplebar.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\simplebar\\dist\\simplebar.d.ts",
+      "PackagePath": "staticwebassets\\lib\\simplebar\\dist\\simplebar.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\simplebar\\dist\\simplebar.esm.js",
+      "PackagePath": "staticwebassets\\lib\\simplebar\\dist\\simplebar.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\simplebar\\dist\\simplebar.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\simplebar\\dist\\simplebar.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\simplebar\\dist\\simplebar.js",
+      "PackagePath": "staticwebassets\\lib\\simplebar\\dist\\simplebar.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\simplebar\\dist\\simplebar.min.css",
+      "PackagePath": "staticwebassets\\lib\\simplebar\\dist\\simplebar.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\simplebar\\dist\\simplebar.min.js",
+      "PackagePath": "staticwebassets\\lib\\simplebar\\dist\\simplebar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\simplebar\\dist\\simplebar.umd.js",
+      "PackagePath": "staticwebassets\\lib\\simplebar\\dist\\simplebar.umd.js"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\lib\\simplebar\\package.json",
+      "PackagePath": "staticwebassets\\lib\\simplebar\\package.json"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.BackEnd_Project.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.BackEnd_Project.props",
+      "PackagePath": "build\\BackEnd_Project.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.BackEnd_Project.props",
+      "PackagePath": "buildMultiTargeting\\BackEnd_Project.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.BackEnd_Project.props",
+      "PackagePath": "buildTransitive\\BackEnd_Project.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

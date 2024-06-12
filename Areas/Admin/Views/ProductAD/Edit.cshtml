@@ -1,0 +1,57 @@
+﻿@model Product
+
+@{
+    ViewData["Title"] = "Edit Product";
+    Layout = "_LayoutAdmin";
+}
+<div class="col-md-8 m-auto">
+    <h2 class="text-center font-weight-bold">Edit Product</h2>
+
+    <form asp-action="Edit" asp-controller="ProductAD" method="post">
+        <input type="hidden" asp-for="ProductId"/>
+
+        <div class="form-group">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control"/>
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Description"></label>
+            <textarea asp-for="Description" class="form-control"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Price"></label>
+            <input asp-for="Price" class="form-control"/>
+            <span asp-validation-for="Price" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="StockQuantity"></label>
+            <input asp-for="StockQuantity" class="form-control"/>
+            <span asp-validation-for="StockQuantity" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="CategoryId"></label>
+            <input asp-for="CategoryId" class="form-control"/>
+            <span asp-validation-for="CategoryId" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Color"></label>
+            <input asp-for="Color" class="form-control"/>
+            <span asp-validation-for="Color" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Size"></label>
+            <input asp-for="Size" class="form-control"/>
+            <span asp-validation-for="Size" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+</div>

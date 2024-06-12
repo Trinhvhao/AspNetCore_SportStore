@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Product>
+
+@{
+    ViewData["Title"] = "Product Page";
+    Layout = "_LayoutAdmin";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Products</h2>
+            <p>
+                <a href="@Url.Action("Create")" class="btn btn-primary">Create New</a>
+            </p>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name Product</th>
+                        <th>Price</th>
+                        <th>Stock Quantity</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var product in Model)
+                    {
+                        <tr>
+                            <td>@product.ProductId</td>
+                            <td>@product.Name</td>
+                            <td>@product.Price</td>
+                            <td>@product.StockQuantity</td>
+                            <td>
+                                <div role="group" aria-label="Order Actions">
+                                    <a href="@Url.Action("Details", new { id = product.ProductId })" class="btn btn-info">Details</a>
+                                    <a href="@Url.Action("Edit", new { id = product.ProductId })" class="btn btn-warning">Edit</a>
+                                    <form asp-action="Delete" asp-route-id="@product.ProductId" method="post" onsubmit="return confirm('Are you sure you want to delete this product?');" style="display:inline;">
+                                        <button type="submit" class="btn btn-danger">Delete</button>
+                                    </form>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

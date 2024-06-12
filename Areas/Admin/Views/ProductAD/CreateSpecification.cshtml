@@ -1,0 +1,79 @@
+﻿@model Specification
+@{
+    Layout = "_LayoutAdmin";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Create/Edit Specification</h1>
+
+            <form asp-action="CreateSpecification" asp-controller="ProductAD">
+                <div class="form-group">
+                    <input asp-for="ProductId" value="@TempData["ProductId"]" hidden/>
+                    <input asp-for="Name" value="." hidden/>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Value" class="control-label"></label>
+                    <table id="detailsTable" class="table table-sm">
+                        <thead>
+                        <tr>
+                            <th>Attribute</th>
+                            <th>Detail</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <!-- Example row -->
+                        <tr>
+                            <td>
+                                <input type="text" name="attribute" class="form-control"/>
+                            </td>
+                            <td>
+                                <input type="text" name="detail" class="form-control"/>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-danger" onclick="removeRow(this)">Remove</button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="btn btn-primary" onclick="addRow()">Add Row</button>
+                </div>
+                <input type="hidden" id="Value" name="Value"/>
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" onclick="prepareJson()"/>
+                </div>
+            </form>
+
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </div>
+</div>
+<script>
+           function addRow() {
+               var table = document.getElementById("detailsTable").getElementsByTagName('tbody')[0];
+               var newRow = table.insertRow();
+               newRow.innerHTML = `<tr>
+                                       <td><input type="text" name="attribute" class="form-control" /></td>
+                                       <td><input type="text" name="detail" class="form-control" /></td>
+                                       <td><button type="button" class="btn btn-danger" onclick="removeRow(this)">Remove</button></td>
+                                   </tr>`;
+           }
+       
+           function removeRow(button) {
+               var row = button.parentNode.parentNode;
+               row.parentNode.removeChild(row);
+           }
+       
+           function prepareJson() {
+               var table = document.getElementById("detailsTable").getElementsByTagName('tbody')[0];
+               var rows = table.getElementsByTagName('tr');
+               var details = [];
+               for (var i = 0; i < rows.length; i++) {
+                   var attribute = rows[i].querySelector("input[name='attribute']").value;
+                   var detail = rows[i].querySelector("input[name='detail']").value;
+                   details.push({ Attribute: attribute, Detail: detail });
+               }
+               document.getElementById("Value").value = JSON.stringify(details);
+           }
+       </script>

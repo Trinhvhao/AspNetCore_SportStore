@@ -1,0 +1,121 @@
+﻿@model ProductHomeView
+
+<section class="owl-carousel active-product-area section_gap">
+    <div class="single-product-slider">
+        <div class="container" style="margin-top: 100px">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <div class="section-title">
+                        <h1>Sản phẩm mới nhất</h1>
+                        <p>
+                            Chào mừng bạn đến với bộ sưu tập sản phẩm mới nhất của chúng tôi! Chúng tôi tự hào giới thiệu những mặt hàng thể thao mới nhất, được thiết kế với công nghệ tiên tiến và chất liệu cao cấp để đáp ứng mọi nhu cầu của bạn.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                @foreach (var product in Model.LatestProducts)
+                {
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single-product">
+                            @if (product.Images.Any())
+                            {
+                                var firstImage = product.Images.First();
+                                <img class="img-fluid" src="@firstImage.ImagePath" alt="@product.Name">
+                            }
+                            <div class="product-details">
+                                <h6>@product.Name</h6>
+                                <div class="price">
+                                    <h6>@product.Price.ToString("N0") đ</h6>
+                                    @* Hiển thị giá của sản phẩm *@
+                                </div>
+                                <div class="prd-bottom">
+                                    <a asp-controller="Cart" asp-action="AddToCart" asp-route-productId="@product.ProductId" class="social-info">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        <p class="hover-text">add to cart</p>
+                                    </a>
+                                    <a href="#" class="social-info">
+                                        <span>
+                                            <i class="fa-regular fa-heart"></i>
+                                        </span>
+                                        <p class="hover-text">Wishlist</p>
+                                    </a>
+                                    <a href="@Url.Action("ProductDetail", "Product", new { productId = product.ProductId })" class="social-info">
+                                        <span>
+                                            <i class="fa-solid fa-info"></i>
+                                        </span>
+                                        <p class="hover-text">view more</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="single-product-slider">
+        <div class="container" style="margin-top: 100px">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <div class="section-title">
+                        <h1>Sản phẩm sắp ra mắt</h1>
+                        <p>
+                            Hãy sẵn sàng cho những điều thú vị sắp tới! Chúng tôi đang chuẩn bị ra mắt một loạt các sản phẩm thể thao mới, được thiết kế để nâng cao hiệu suất và trải nghiệm của bạn. Các sản phẩm sắp ra mắt này sẽ mang đến những cải tiến vượt bậc và tính năng đột phá.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                @foreach (var product in Model.UpcomingProducts)
+                {
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single-product">
+                            @if (product.Images.Any())
+                            {
+                                var firstImage = product.Images.First();
+                                <img class="img-fluid" src="@firstImage.ImagePath" alt="@product.Name">
+                            }
+                            <div class="product-details">
+                                <h6>@product.Name</h6>
+                                <div class="price">
+                                    <h6>@product.Price.ToString("N0") đ</h6>
+                                    @* Hiển thị giá của sản phẩm *@
+                                </div>
+                                <div class="prd-bottom">
+                                    <a asp-controller="Cart" asp-action="AddToCart" asp-route-productId="@product.ProductId" class="social-info">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        <p class="hover-text">add to cart</p>
+                                    </a>
+
+                                    <a href="#" class="social-info">
+                                        <span>
+                                            <i class="fa-regular fa-heart"></i>
+                                        </span>
+                                        <p class="hover-text">Wishlist</p>
+                                    </a>
+                                    <a href="#" class="social-info">
+                                        <span>
+                                            <i class="fa-solid fa-code-compare"></i>
+                                        </span>
+                                        <p class="hover-text">compare</p>
+                                    </a>
+                                    <a href="@Url.Action("ProductDetail", "Product", new { productId = product.ProductId })" class="social-info">
+                                        <span>
+                                            <i class="fa-solid fa-info"></i>
+                                        </span>
+                                        <p class="hover-text">view more</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>

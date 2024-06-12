@@ -1,0 +1,26 @@
+﻿@model User
+@{
+    ViewData["Title"] = "User Page";
+    Layout = "_LayoutAdmin";
+}
+
+<div class="container">
+
+    <h1 class="mt-5 text-center">User Details Cho UserID: @Model.UserId</h1>
+    <div class="card col-md-8 m-auto text-center">
+        <div class="card-body">
+            <h5 class="card-title">Username</h5>
+            <p class="card-text text-primary">@Model.Username</p>
+            <h5 class="card-title">Full Name</h5>
+            <p class="card-text text-primary">@Model.FullName</p>
+            <h5 class="card-title">Email</h5>
+            <p class="card-text text-primary">@Model.Email</p>
+            <h5 class="card-title">Address</h5>
+            <p class="card-text text-primary">@Model.Address</p>
+            <h5 class="card-title">Phone Number</h5>
+            <p class="card-text text-primary">@Model.PhoneNumber</p>
+            <h5 class="card-title">Role</h5>
+            <p class="card-text text-primary">@Model.Role</p>
+        </div>
+    </div>
+</div>

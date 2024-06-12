@@ -1,0 +1,361 @@
+﻿@model IEnumerable<Product>
+@{
+    ViewData["Title"] = "Trinh Van Hao";
+    Layout = "_Layout";
+}
+<body>
+<!-- start banner Area -->
+<section class="banner-area">
+    <div class="container">
+        <div class="row fullscreen align-items-center justify-content-start">
+            <div class="col-lg-12">
+                <div class="active-banner-slider owl-carousel">
+                    <!-- single-slide -->
+                    <div class="row single-slide align-items-center d-flex" style="margin-top: 100px">
+                        <div class="col-lg-5 col-md-6">
+                            <div class="banner-content">
+                                <h1>Nike New <br>Collection!</h1>
+                                <p>
+                                    Khám phá bộ sưu tập mới nhất từ Nike, nơi công nghệ tiên tiến và phong cách hiện đại gặp gỡ. Chúng tôi tự hào giới thiệu những thiết kế mới nhất, mang đến cho bạn sự thoải mái tối đa và hiệu suất vượt trội. Cho dù bạn đang chạy bộ, tập gym, hay tham gia các hoạt động thể thao khác, bộ sưu tập này sẽ giúp bạn vượt qua mọi giới hạn.
+                                </p>
+                                <div class="add-bag d-flex align-items-center">
+                                    <a class="add-btn" href="">
+                                        <span class="lnr lnr-cross"></span>
+                                    </a>
+                                    <span class="add-text text-uppercase">Add to Bag</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="banner-img">
+                                <img class="img-fluid" src="~/images/banner/banner-img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single-slide -->
+                    <div class="row single-slide align-items-center d-flex" style="margin-top: 100px">
+                        <div class="col-lg-5 col-md-6">
+                            <div class="banner-content">
+                                <h1>Nike New <br>Collection!</h1>
+                                <p>
+                                    Khám phá bộ sưu tập mới nhất từ Nike, nơi công nghệ tiên tiến và phong cách hiện đại gặp gỡ. Chúng tôi tự hào giới thiệu những thiết kế mới nhất, mang đến cho bạn sự thoải mái tối đa và hiệu suất vượt trội. Cho dù bạn đang chạy bộ, tập gym, hay tham gia các hoạt động thể thao khác, bộ sưu tập này sẽ giúp bạn vượt qua mọi giới hạn.
+                                </p>
+                                <div class="add-bag d-flex align-items-center">
+                                    <a class="add-btn" href="">
+                                        <span class="lnr lnr-cross"></span>
+                                    </a>
+                                    <span class="add-text text-uppercase">Add to Bag</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="banner-img">
+                                <img class="img-fluid" src="~/images/banner/banner-img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End banner Area -->
+
+<!-- start features Area -->
+<section class=" features-area section_gap">
+    <div class="container">
+        <div class="row features-inner">
+            <!-- single features -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-features">
+                    <div class="f-icon">
+                        <img src="~/images/features/f-icon1.png" alt="">
+                    </div>
+                    <h6>Free Delivery</h6>
+                    <p>Free Shipping on all order</p>
+                </div>
+            </div>
+            <!-- single features -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-features">
+                    <div class="f-icon">
+                        <img src="~/images/features/f-icon2.png" alt="">
+                    </div>
+                    <h6>Return Policy</h6>
+                    <p>Free Shipping on all order</p>
+                </div>
+            </div>
+            <!-- single features -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-features">
+                    <div class="f-icon">
+                        <img src="~/images/features/f-icon3.png" alt="">
+                    </div>
+                    <h6>24/7 Support</h6>
+                    <p>Free Shipping on all order</p>
+                </div>
+            </div>
+            <!-- single features -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-features">
+                    <div class="f-icon">
+                        <img src="~/images/features/f-icon4.png" alt="">
+                    </div>
+                    <h6>Secure Payment</h6>
+                    <p>Free Shipping on all order</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end features Area -->
+<!-- Sử dụng View Component trong trang chủ -->
+
+<!-- Start category Area -->
+<section class="category-area">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8">
+                        <div class="single-deal">
+                            <div class="overlay"></div>
+                            <img class="img-fluid w-100" src="~/images/category/block_home_category5.jpg" alt="">
+                            <a href="@Url.Action("ProductByCategory", "Category", new { categoryId = 7 })" target="_blank">
+                                <div class="deal-details">
+                                    <h6 class="deal-title">Phụ Kiện</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="single-deal">
+                            <div class="overlay"></div>
+                            <img class="img-fluid w-100" src="~/images/category/block_home_category6.jpg" alt="">
+                            <a href="@Url.Action("ProductByCategory", "Category", new { categoryId = 1 })" target="_blank">
+                                <div class="deal-details">
+                                    <h6 class="deal-title">Áo thể thao</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="single-deal">
+                            <div class="overlay"></div>
+                            <img class="img-fluid w-100" src="~/images/category/block_home_category7.jpg" alt="">
+                            <a href="@Url.Action("ProductByCategory", "Category", new { categoryId = 9 })" target="_blank">
+                                <div class="deal-details">
+                                    <h6 class="deal-title">Quần thể thao</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8">
+                        <div class="single-deal">
+                            <div class="overlay"></div>
+                            <img class="img-fluid w-100" src="~/images/category/block_home_category8.jpg" alt="">
+                            <a href="@Url.Action("ProductByCategory", "Category", new { categoryId = 6 })" class="img-pop-up" target="_blank">
+                                <div class="deal-details">
+                                    <h6 class="deal-title">Balo thể thao</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-deal">
+                    <div class="overlay"></div>
+                    <img class="img-fluid w-100" src="~/images/category/collection_one_img.webp" alt="">
+                    <a href="@Url.Action("ProductByCategory", "Category", new { categoryId = 3 })" target="_blank">
+                        <div class="deal-details">
+                            <h6 class="deal-title">Sneaker for Sports</h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End category Area -->
+
+<vc:product-home></vc:product-home>
+<div class="mb-3" style="text-align: center; margin-bottom: 20px;">
+    <button class="buttonn">
+        <a asp-action="Index" asp-controller="Category">
+            Xem thêm
+            </a>
+    </button>
+        
+
+
+
+</div>
+
+
+<!-- Start exclusive deal Area -->
+<section class="exclusive-deal-area">
+    <div class="container-fluid">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6 no-padding exclusive-left">
+                <div class="row clock_sec clockdiv" id="clockdiv">
+                    <div class="col-lg-12">
+                        <h1>Ưu đãi cuối mùa</h1>
+                        <p>Who are in extremely love with eco friendly system.</p>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="row clock-wrap">
+                            <div class="col clockinner1 clockinner">
+                                <h1 class="days">150</h1>
+                                <span class="smalltext">Days</span>
+                            </div>
+                            <div class="col clockinner clockinner1">
+                                <h1 class="hours">23</h1>
+                                <span class="smalltext">Hours</span>
+                            </div>
+                            <div class="col clockinner clockinner1">
+                                <h1 class="minutes">47</h1>
+                                <span class="smalltext">Mins</span>
+                            </div>
+                            <div class="col clockinner clockinner1">
+                                <h1 class="seconds">59</h1>
+                                <span class="smalltext">Secs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a asp-action="Index" asp-controller="Category" class="primary-btn">Shop Now</a>
+            </div>
+            <div class="col-lg-6 no-padding exclusive-right">
+                <div class="active-exclusive-product-slider">
+                    <!-- single exclusive carousel -->
+                    <div class="single-exclusive-slider">
+                        <img class="img-fluid" src="~/images/product/e-p1.png" alt="">
+                        <div class="product-details">
+                            <div class="price">
+                                <h6>$150.00</h6>
+                                <h6 class="l-through">$210.00</h6>
+                            </div>
+                            <h4>
+                                addidas New Hammer sole
+                                for Sports person
+                            </h4>
+                            <div class="add-bag d-flex align-items-center justify-content-center">
+                                <a class="add-btn" href="">
+                                    <span>
+                                        <i class="fa-solid fa-plus "></i>
+                                    </span>
+                                </a>
+                                <span class="add-text text-uppercase">Add to Bag</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single exclusive carousel -->
+                    <div class="single-exclusive-slider">
+                        <img class="img-fluid" src="~/images/product/e-p1.png" alt="">
+                        <div class="product-details">
+                            <div class="price">
+                                <h6>$150.00</h6>
+                                <h6 class="l-through">$210.00</h6>
+                            </div>
+                            <h4>
+                                addidas New Hammer sole
+                                for Sports person
+                            </h4>
+                            <div class="add-bag d-flex align-items-center justify-content-center">
+                                <a class="add-btn" href="">
+                                    <span class="ti-bag"></span>
+                                </a>
+                                <span class="add-text text-uppercase">Add to Bag</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End exclusive deal Area -->
+
+@* // Review *@
+<section>
+    <div class="container mt-5 mb-5">
+        <h1 class="text-center ">Bộ sưu tập mới</h1>
+        <div class="row" style="margin: auto">
+
+            <div class="col-md-4 col-12">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="img-content">
+                            <img src="https://theme.hstatic.net/1000341630/1001071096/14/collection_one2_img.jpg?v=866"/>
+                        </div>
+                        <div class="content">
+                            <p class="heading">Under Armour</p>
+                            <p>
+                                Chúng tôi tôn trọng cam kết của bạn với sự nỗ lực và sự kiên trì. Với Under Armour, bạn sẽ luôn sẵn sàng vượt qua giới hạn và vươn tới thành công.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="img-content">
+                            <img src="https://theme.hstatic.net/1000341630/1001071096/14/pro_featured_img.png?v=866"/>
+                        </div>
+                        <div class="content">
+                            <p class="heading">Fila</p>
+                            <p>
+                                Với Fila, thể thao không chỉ là một hoạt động, mà còn là một lối sống. Bộ sưu tập mới nhất của chúng tôi tôn vinh tinh thần thể thao, khích lệ bạn vượt qua giới hạn và vươn tới mục tiêu của mình.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12 ">
+
+                <div class="card-container">
+                    <div class="card">
+                        <div class="img-content">
+                            <img src="https://theme.hstatic.net/1000341630/1001071096/14/collection_one_img.jpg?v=866"/>
+                        </div>
+                        <div class="content">
+                            <p class="heading">Be More Human</p>
+                            <p>
+                                Reebok tin rằng mọi người đều có khả năng vượt qua bản thân mình. Với các sản phẩm đồ thể thao của chúng tôi, bạn sẽ được khích lệ và truyền động lực để trở thành phiên bản tốt nhất của chính mình.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Start brand Area -->
+<section class="brand-area section_gap">
+    <div class="container">
+        <div class="row">
+            <a class="col single-img" href="#">
+                <img class="img-fluid d-block mx-auto" src="~/images/brand/1.png" alt="">
+            </a>
+            <a class="col single-img" href="#">
+                <img class="img-fluid d-block mx-auto" src="~/images/brand/2.png" alt="">
+            </a>
+            <a class="col single-img" href="#">
+                <img class="img-fluid d-block mx-auto" src="~/images/brand/3.png" alt="">
+            </a>
+            <a class="col single-img" href="#">
+                <img class="img-fluid d-block mx-auto" src="~/images/brand/4.png" alt="">
+            </a>
+            <a class="col single-img" href="#">
+                <img class="img-fluid d-block mx-auto" src="~/images/brand/5.png" alt="">
+            </a>
+        </div>
+    </div>
+</section>
+<!-- End brand Area -->
+
+
+</body>

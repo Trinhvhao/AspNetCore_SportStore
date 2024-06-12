@@ -1,0 +1,167 @@
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using System.Globalization
+@model Order
+<!-- Start Banner Area -->
+<section class="banner-area organic-breadcrumb">
+    <div class="container">
+        <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+            <div class="col-first">
+                <h1>Confirmation</h1>
+                <nav class="d-flex align-items-center">
+                    <a asp-controller="Home" asp-action="Index"> Home <i class="fa-solid fa-arrow-right"></i><span> </span></a>
+                    <a asp-action="Index" asp-controller="Category"> Confirmation</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Banner Area -->
+
+<!--================Order Details Area =================-->
+<section class="order_details section_gap">
+    <div class="container">
+        <h3 class="title_confirmation">Cảm ơn. Đơn hàng của bạn đã được đặt.</h3>
+        <div class="row order_d_inner">
+            <div class="col-lg-4">
+                <div class="details_item">
+                    <h4>Thông tin người đặt</h4>
+                    <ul class="list">
+                        <li>
+                            <a href="#">
+                                <span>Tên: </span>@Model.User.FullName
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Số điện thoại: </span>@Model.User.PhoneNumber
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Địa chỉ: </span>@Model.User.Address
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="details_item">
+                    <h4>Thông tin đơn hàng</h4>
+                    <ul class="list">
+                        <li>
+                            <a href="#">
+                                <span>Mã đơn hàng: </span>@Model.OrderId
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Ngày đặt hàng: </span>@Model.OrderDate.ToString("dd/MM/yyyy")
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+
+                                @{
+                                    var subtotalPrice = Model.TotalAmount.ToString("C", new CultureInfo("vi-VN"));
+                                }
+                                <span>Tổng tiền: </span> @subtotalPrice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>PT thanh toán: </span>@Model.PaymentMethod
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="details_item">
+                    <h4>Thông tin vận chuyển</h4>
+                    <ul class="list">
+                        <li>
+                            <a href="#">
+                                <span>Hình thức vận chuyển: </span> @Model.ShippingMethod
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Địa chỉ nhận hàng: </span> @Model.ShippingAddress
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="order_details_table">
+            <h2>Order Details</h2>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">Product</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var item in Model.OrderDetails)
+                    {
+                        <tr>
+                            <td>
+                                <p>@item.Product.Name</p>
+                            </td>
+                            <td>
+                                <h5>x @item.Quantity</h5>
+                            </td>
+                            <td>
+                                @{
+                                    var totalPrice = (item.Quantity * item.UnitPrice).ToString("C", new CultureInfo("vi-VN"));
+                                }
+                                <p>@totalPrice</p>
+                            </td>
+                        </tr>
+                    }
+                    <tr>
+                        <td>
+                            <h4>Subtotal</h4>
+                        </td>
+                        <td>
+                            <h5></h5>
+                        </td>
+                        <td>
+
+                            <p>@subtotalPrice</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Shipping</h4>
+                        </td>
+                        <td>
+                            <h5></h5>
+                        </td>
+                        <td>
+                            <p>@Model.ShippingMethod</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>Total</h4>
+                        </td>
+                        <td>
+                            <h5></h5>
+                        </td>
+                        <td>
+                            <p>@(Model.TotalAmount + 50000).ToString("C", new System.Globalization.CultureInfo("vi-VN"))</p> <!-- Giả định phí giao hàng là 50,000 VND -->
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================End Order Details Area =================-->

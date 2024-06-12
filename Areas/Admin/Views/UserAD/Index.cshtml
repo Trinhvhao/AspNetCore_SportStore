@@ -1,0 +1,50 @@
+﻿@model List<User>
+
+@{
+    ViewData["Title"] = "User Page";
+    Layout = "_LayoutAdmin";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Users</h2>
+            <p>
+                <a href="@Url.Action("Create")" class="btn btn-primary">Create New</a>
+            </p>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>User Name</th>
+                        <th>Full Name</th>
+                        <th>Role</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var user in Model)
+                    {
+                        <tr>
+                            <td>@user.UserId</td>
+                            <td>@user.Username</td>
+                            <td>@user.FullName</td>
+                            <td>@user.Role</td>
+                            <td>
+                                <div class="btn-group-sm" role="group" aria-label="Order Actions">
+                                    <a href="@Url.Action("Detail", new { id = user.UserId })" class="btn btn-info">Details</a>
+                                    <a href="@Url.Action("Edit", new { id = user.UserId })" class="btn btn-warning">Edit</a>
+                                    <form asp-action="Delete" asp-route-id="@user.UserId" method="post" onsubmit="return confirm('Are you sure you want to delete this user?');" style="display:inline;">
+                                        <button type="submit" class="btn btn-danger">Delete</button>
+                                    </form>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

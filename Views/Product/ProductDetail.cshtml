@@ -1,0 +1,446 @@
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using Newtonsoft.Json
+@model Product
+@{
+    Layout = "_Layout";
+    var sizesList = ViewBag.SizesList as List<string>;
+}
+<body>
+<!-- Start Banner Area -->
+<section class="banner-area organic-breadcrumb">
+    <div class="container">
+        <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+            <div class="col-first">
+                <h1>Product Details Page</h1>
+                <nav class="d-flex align-items-center">
+                    <a asp-action="Index" asp-controller="Home">
+                        Home
+                        <span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </a>
+                    <a asp-action="Index" asp-controller="Category">
+                        Shop
+                        <span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </a>
+                    <a href="#"> Product Detail</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Banner Area -->
+
+<!--================Single Product Area =================-->
+<div class="product_image_area">
+    <div class="container">
+        <div class="row s_product_inner">
+            <div class="col-lg-6">
+                <div class="s_Product_carousel">
+                    @if (Model.Images.Any())
+                    {
+                        foreach (var image in Model.Images)
+                        {
+                            <div class="single-prd-item">
+                                <img class="img-fluid" src="@image.ImagePath" alt="@Model.Name">
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+            <div class="col-lg-5 offset-lg-1">
+                <div class="s_product_text">
+                    <h3>@Model.Name</h3>
+                    <h2>@Model.Price.ToString("N0") đ</h2>
+                    <ul class="list">
+                        <li>
+                            <a class="active" href="#"><span>Category</span> : @Model.Category.Name</a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Availibility</span> : @Model.StockQuantity</a>
+                        </li>
+                        <li>
+                            <div class="product_sizes">
+                                <h4>Choose Size:</h4>
+                                <ul class="size-list d-flex">
+                                    @if (sizesList != null && sizesList.Any())
+                                    {
+                                        @foreach (var size in sizesList)
+                                        {
+                                            <li class="size-item">
+                                                <button type="button" class="btn btn-outline-primary" value="@size">@size</button>
+                                            </li>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <li class="size-item">
+                                            <p>No sizes available</p>
+                                        </li>
+                                    }
+                                </ul>
+                            </div>
+
+                        </li>
+                    </ul>
+                    <p>
+                        @Model.Description
+                    </p>
+                    <div class="product_count">
+                        <label for="qty">Quantity:</label>
+                        <input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:" class="input-text qty">
+                        <button onclick="increaseQuantity()" class="increase items-count" type="button">
+                            <i class="fa-solid fa-caret-up"></i>
+                        </button>
+                        <button onclick="decreaseQuantity()" class="reduced items-count" type="button">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </button>
+                    </div>
+                    <div class="card_area d-flex align-items-center">
+                        <form asp-action="AddToCart" asp-controller="Cart" method="post" style="display:inline;">
+                            <input type="hidden" name="productId" value="@Model.ProductId"/>
+                            <input type="hidden" name="quantity" id="quantityInput" value="1"/> <!-- Default value -->
+                            <button type="submit" class="primary-btn">Add to Cart</button>
+                        </form>
+                        <a class="icon_btn" href="#">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                        <a class="icon_btn" href="#">
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--================End Single Product Area =================-->
+
+<!--================Product Description Area =================-->
+<section class="product_description_area">
+<div class="container">
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Description</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+           aria-selected="false">
+            Specification
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+           aria-selected="false">
+            Reviews
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review"
+           aria-selected="false">
+            Comment
+        </a>
+    </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+<div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <p>
+        @Model.Description
+    </p>
+</div>
+<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+            <tr>
+                <th class="text-center" scope="col">Attribute</th>
+                <th class="text-center" scope="col">Detail</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var specification in ViewBag.Specifications as List<Specification>)
+            {
+                @foreach (var item in JsonConvert.DeserializeObject<List<dynamic>>(specification.Value))
+                {
+                    <tr>
+                        <td class="text-center">@item.Attribute</td>
+                        <td class="text-center">@item.Detail</td>
+                    </tr>
+                }
+            }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="review-tab">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="row total_rate">
+                <div class="col-6">
+                    <div class="box_total">
+                        <h5>Overall</h5>
+                        <h4>4.0</h4>
+                        <h6>(03 Reviews)</h6>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="rating_list">
+                        <h3>Based on 3 Reviews</h3>
+                        <ul class="list">
+                            <li>
+                                <a href="#">
+                                    5 Star <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                    <i
+                                        class="fa fa-star">
+                                    </i><i class="fa fa-star"></i> 01
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    4 Star <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                    <i
+                                        class="fa fa-star">
+                                    </i><i class="fa fa-star"></i> 01
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    3 Star <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                    <i
+                                        class="fa fa-star">
+                                    </i><i class="fa fa-star"></i> 01
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    2 Star <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                    <i
+                                        class="fa fa-star">
+                                    </i><i class="fa fa-star"></i> 01
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    1 Star <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                    <i
+                                        class="fa fa-star">
+                                    </i><i class="fa fa-star"></i> 01
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="review_list">
+                <div class="review_item">
+                    <div class="media">
+                        <div class="d-flex">
+                            <img src="img/product/review-1.png" alt="">
+                        </div>
+                        <div class="media-body">
+                            <h4>Blake Ruiz</h4>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo
+                    </p>
+                </div>
+                <div class="review_item">
+                    <div class="media">
+                        <div class="d-flex">
+                            <img src="img/product/review-2.png" alt="">
+                        </div>
+                        <div class="media-body">
+                            <h4>Blake Ruiz</h4>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo
+                    </p>
+                </div>
+                <div class="review_item">
+                    <div class="media">
+                        <div class="d-flex">
+                            <img src="img/product/review-3.png" alt="">
+                        </div>
+                        <div class="media-body">
+                            <h4>Blake Ruiz</h4>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="review_box">
+                <h4>Add a Review</h4>
+                <p>Your Rating:</p>
+                <ul class="list">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-star"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-star"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-star"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-star"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-star"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p>Outstanding</p>
+                <form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Full name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Full name'">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="number" name="number" placeholder="Phone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone Number'">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" id="message" rows="1" placeholder="Review" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Review'"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-right">
+                        <button type="submit" value="submit" class="primary-btn">Submit Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="tab-pane fade show active" id="review" role="tabpanel" aria-labelledby="contact-tab">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="comment_list">
+                @if (ViewBag.Comments != null && ViewBag.Comments.Count > 0)
+                {
+                    @foreach (var comment in ViewBag.Comments as List<Comment>)
+                    {
+                        <div class="review_item mt-3">
+                            <div class="media">
+                                <div class="d-flex">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="media-body">
+                                    @if (comment.UserId != null && ViewBag.Users.ContainsKey(comment.UserId))
+                                    {
+                                        <h4>@ViewBag.Users[comment.UserId]</h4>
+                                    }
+                                    <h5>@comment.CreatedAt.ToString("dd/MM/yyyy hh:mm tt")</h5>
+                                    <a class="reply_btn" href="#">Reply</a>
+                                </div>
+                            </div>
+                            <p>@comment.Content</p>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <p>No comments available</p>
+                }
+            </div>
+
+        </div>
+        <div class="col-lg-6">
+            <div class="review_box">
+                <h4>Post a comment</h4>
+                <form class="row contact_form" action="@Url.Action("CreateComment", "Product")" method="post" id="commentForm" novalidate="novalidate">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <textarea class="form-control" name="Content" rows="3" placeholder="Your comment"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-right">
+                        <input type="hidden" name="productId" value="@Model.ProductId"/>
+                        <button type="submit" class="btn primary-btn">Submit Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</section>
+<!--================End Product Description Area =================-->
+
+<script>
+    // Function to increase quantity
+    function increaseQuantity() {
+        var quantityInput = document.getElementById('sst');
+        var currentQuantity = parseInt(quantityInput.value);
+        if (!isNaN(currentQuantity)) {
+            quantityInput.value = currentQuantity + 1;
+            updateHiddenInput();
+        }
+    }
+
+    // Function to decrease quantity
+    function decreaseQuantity() {
+        var quantityInput = document.getElementById('sst');
+        var currentQuantity = parseInt(quantityInput.value);
+        if (!isNaN(currentQuantity) && currentQuantity > 1) {
+            quantityInput.value = currentQuantity - 1;
+            updateHiddenInput();
+        }
+    }
+
+    // Function to update hidden input value
+    function updateHiddenInput() {
+        var quantityInput = document.getElementById('sst');
+        var hiddenInput = document.getElementById('quantityInput');
+        hiddenInput.value = quantityInput.value;
+    }
+</script>
+</body>

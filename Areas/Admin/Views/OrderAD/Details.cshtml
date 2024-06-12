@@ -1,0 +1,86 @@
+﻿@using System.Globalization
+@model Order 
+@{
+    ViewData["Title"] = "Order Detail";
+    Layout = "_LayoutAdmin";
+}
+<div class="container mt-5">
+    <h2 class="mb-4">Order Confirmation</h2>
+
+    <div class="card mb-4">
+        <div class="card-header">
+            Order Details
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Order #@Model.OrderId</h5>
+            <p class="card-text">
+                <strong>Date:</strong> @Model.OrderDate.ToString("dd/MM/yyyy")
+            </p>
+            <p class="card-text">
+                <strong>Total Amount:</strong> @Model.TotalAmount.ToString("C", new CultureInfo("vi-VN"))
+            </p>
+            <p class="card-text">
+                <strong>Status:</strong> @Model.OrderStatus
+            </p>
+            <p class="card-text">
+                <strong>Shipping Method:</strong> @Model.ShippingMethod
+            </p>
+            <p class="card-text">
+                <strong>Payment Method:</strong> @Model.PaymentMethod
+            </p>
+            <p class="card-text">
+                <strong>Shipping Address:</strong> @Model.ShippingAddress
+            </p>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header">
+            User Information
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">@Model.User.FullName</h5>
+            <p class="card-text">
+                <strong>Email:</strong> @Model.User.Email
+            </p>
+            <p class="card-text">
+                <strong>Phone:</strong> @Model.User.PhoneNumber
+            </p>
+            <p class="card-text">
+                <strong>Address:</strong> @Model.User.Address
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            Order Items
+        </div>
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Product</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Unit Price</th>
+                    <th scope="col">Total</th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var item in Model.OrderDetails)
+                {
+                    <tr>
+                        <td>@item.Product.Name</td>
+                        <td>@item.Quantity</td>
+                        <td>@item.UnitPrice.ToString("C", new CultureInfo("vi-VN"))</td>
+                        @{
+                            var totalPrice = (item.Quantity * item.UnitPrice).ToString("C", new CultureInfo("vi-VN"));
+                        }
+                        <td>@totalPrice</td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

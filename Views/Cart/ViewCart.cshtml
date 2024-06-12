@@ -1,0 +1,188 @@
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using System.Globalization
+@model List<Cart>
+@{
+    Layout = "_Layout";
+}
+<body>
+<!--================Cart Area =================-->
+
+<section class="cart_area">
+    <div class="container">
+        <div class="cart_inner">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">Product</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var cart in Model)
+                    {
+                        <tr>
+                            <td>
+                                <div class="media">
+                                    <div class="d-flex">
+                                        <img src="@cart.Product.Images.FirstOrDefault()?.ImagePath" alt="@cart.Product.Name" width="100" height="100">
+                                    </div>
+                                    <div class="media-body">
+                                        <h4>@cart.Product.Name</h4>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                @{
+                                    var elementPrice = cart.Product.Price.ToString("C", new CultureInfo("vi-VN"));
+                                }
+                                <h5 class="price">@elementPrice </h5>
+                            </td>
+                            <td>
+                                <div class="product_count">
+                                    <input type="text" name="quantity" id="quantity_@cart.ProductId" maxlength="12" value="@cart.Quantity" title="Quantity" class="input-text qty">
+                                </div>
+                            </td>
+                            <td>
+                                @{
+                                    var totalPrice = (cart.Product.Price * cart.Quantity).ToString("C", new CultureInfo("vi-VN"));
+                                }
+                                <h5>@totalPrice</h5>
+                            </td>
+                            <td>
+                                <input type="checkbox" class="checkbox" data-price="@cart.Product.Price" data-quantity="@cart.Quantity"/>
+                            </td>
+                            <td>
+                                <form asp-action="RemoveFromCart" asp-controller="Cart" method="post" onsubmit="return confirm('Bạn có chắc chắn muốn xóa sản phẩm này khỏi giỏ hàng?');">
+                                    <input type="hidden" name="productId" value="@cart.ProductId"/>
+                                    <button type="submit" class="btn btn-danger">X</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                    <tr class="bottom_button">
+                        <td>
+                            <a class="gray_btn" href="#">Update Cart</a>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div class="cupon_text d-flex align-items-center">
+                                <input type="text" placeholder="Coupon Code">
+                                <a class="primary-btn" href="#">Apply</a>
+                                <a class="gray_btn" href="#">Close Coupon</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <h5>Subtotal</h5>
+                        </td>
+                        <td>
+                            <h5 id="totalPrice"></h5>
+                        </td>
+
+                    </tr>
+                    <tr class="shipping_area">
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <h5>Shipping</h5>
+                        </td>
+                        <td>
+                            <form id="checkoutForm" asp-action="Checkout" asp-controller="Order" method="post">
+                                <div class="shipping_box">
+                                    <select class="shipping_select" name="shippingMethod" id="shippingMethod">
+                                        <option value="Giao hàng tiêu chuẩn">Giao hàng tiêu chuẩn(10-15 ngày)</option>
+                                        <option value="Giao hàng nhanh">Giao hàng nhanh(3-5 ngày)</option>
+                                        <option value="Giao hàng hoả tốc">Giao hàng qua đêm( 1-2 ngày)</option>
+                                    </select>
+                                    <select class="shipping_select" name="paymentMethod" id="paymentMethod">
+                                        <option value="Thanh toán khi nhận hàng">Thanh toán khi nhận hàng</option>
+                                        <option value="Chuyển khoản ngân hàng">Chuyển khoản ngân hàng</option>
+                                        <option value="Thanh toán qua ví điện tử">Thanh toán qua ví điện tử</option>
+                                    </select>
+                                    <input type="text" name="shippingAddress" id="shippingAddress" placeholder="Địa chỉ giao hàng: Số nhà, Số Đường, Huyện, Tỉnh, Thành Phố" required="Vui lòng nhập địa chỉ giao hàng">
+                                </div>
+                                <button type="submit" class="primary-btn" id="hiddenButton" hidden="">Proceed to checkout</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr class="out_button_area">
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div class="checkout_btn_inner d-flex align-items-center">
+                                <a class="gray_btn" asp-controller="Category" asp-action="Index">Continue Shopping</a>
+                                <button type="submit" class="primary-btn" id="visibleButton">Proceed to checkout</button>
+
+
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================End Cart Area =================-->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var checkboxes = document.querySelectorAll(".checkbox");
+        var checkoutButton = document.getElementById("checkoutButton");
+        var total = 0;
+        var totalPriceElement = document.getElementById("totalPrice");
+ var visibleButton = document.getElementById("visibleButton");
+        var hiddenButton = document.getElementById("hiddenButton");
+
+     visibleButton.addEventListener("click", function () {
+                 // Hiển thị thông báo xác nhận trước khi thực hiện checkout
+                 var confirmed = confirm("Bạn có chắc chắn muốn thực hiện đặt hàng?");
+                 if (confirmed) {
+                     hiddenButton.click(); // Kích hoạt sự kiện click cho nút ẩn
+                 }
+                 })
+        checkboxes.forEach(function (checkbox) {
+            checkbox.addEventListener("change", function () {
+                var price = parseFloat(this.dataset.price);
+                var quantity = parseInt(this.dataset.quantity);
+                if (this.checked) {
+                    total += price * quantity;
+                } else {
+                    total -= price * quantity;
+                }
+                totalPriceElement.textContent = total.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+            });
+        });
+
+        checkoutButton.addEventListener("click", function () {
+            // Gửi thông tin về các sản phẩm đã chọn lên máy chủ để xử lý
+            console.log("Total price of selected products: " + total);
+        });
+    });
+</script>
+</body>

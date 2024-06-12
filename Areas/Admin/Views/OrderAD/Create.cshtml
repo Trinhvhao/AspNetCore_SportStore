@@ -1,0 +1,56 @@
+﻿@model Order
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "_LayoutAdmin";
+}
+
+<div class="container">
+    <h1>Create New Order</h1>
+    <form asp-action="Create" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <label asp-for="UserId" class="control-label">UserID</label>
+            <input asp-for="UserId" class="form-control"/>
+            <span asp-validation-for="UserId" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="OrderStatus" class="control-label">OrderStatus</label>
+            <input asp-for="OrderStatus" class="form-control"/>
+            <span asp-validation-for="OrderStatus" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="TotalAmount" class="control-label">TotalAmount</label>
+            <input asp-for="TotalAmount" class="form-control"/>
+            <span asp-validation-for="TotalAmount" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="OrderDate" class="control-label">OrderDate</label>
+            <input asp-for="OrderDate" type="datetime-local" class="form-control"/>
+            <span asp-validation-for="OrderDate" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Create" class="btn btn-primary"/>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            var now = new Date();
+            var day = ('0' + now.getDate()).slice(-2);
+            var month = ('0' + (now.getMonth() + 1)).slice(-2);
+            var today = now.getFullYear() + '-' + (month) + '-' + (day);
+            var hours = ('0' + now.getHours()).slice(-2);
+            var minutes = ('0' + now.getMinutes()).slice(-2);
+            var formattedTime = today + 'T' + hours + ':' + minutes;
+            document.getElementById('OrderDate').value = formattedTime;
+        });
+    </script>
+}
