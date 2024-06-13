@@ -4224,6 +4224,38 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\FS2RSG2331X-WHI-8_5678b530-dd25-4589-91a6-2d30085bbcbc.webp))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\fsfsd_68bb7cbd-f355-4714-b73c-424d5cd217ad.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>BackEnd_Project</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BackEnd_Project</BasePath>
+      <RelativePath>images/fsfsd_68bb7cbd-f355-4714-b73c-424d5cd217ad.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\fsfsd_68bb7cbd-f355-4714-b73c-424d5cd217ad.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\FW2PTF1062X-LGR-1_746b7853-7f7f-4a67-8585-dd7ea14a1893.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>BackEnd_Project</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BackEnd_Project</BasePath>
+      <RelativePath>images/FW2PTF1062X-LGR-1_746b7853-7f7f-4a67-8585-dd7ea14a1893.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\FW2PTF1062X-LGR-1_746b7853-7f7f-4a67-8585-dd7ea14a1893.webp))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\IG3320-1_73fcc57c-0f18-4400-8a1a-fa9aec29911b.webp))">
       <SourceType>Package</SourceType>
       <SourceId>BackEnd_Project</SourceId>

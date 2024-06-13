@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dRnrsBx9nKqhXvt5/w+4fq5UvH4cbjeZyLLjrl8d0u8=",
+  "Hash": "0/a2uvJ0lfbYALxHngWFjaGjHSvbELcAh2Q5+ERQb/Y=",
   "Source": "BackEnd_Project",
   "BasePath": "_content/BackEnd_Project",
   "Mode": "Default",
@@ -5540,6 +5540,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\FS2RSG2331X-WHI-8_5678b530-dd25-4589-91a6-2d30085bbcbc.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\fsfsd_68bb7cbd-f355-4714-b73c-424d5cd217ad.webp",
+      "SourceId": "BackEnd_Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\",
+      "BasePath": "_content/BackEnd_Project",
+      "RelativePath": "images/fsfsd_68bb7cbd-f355-4714-b73c-424d5cd217ad.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\fsfsd_68bb7cbd-f355-4714-b73c-424d5cd217ad.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\FW2PTF1062X-LGR-1_746b7853-7f7f-4a67-8585-dd7ea14a1893.webp",
+      "SourceId": "BackEnd_Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\",
+      "BasePath": "_content/BackEnd_Project",
+      "RelativePath": "images/FW2PTF1062X-LGR-1_746b7853-7f7f-4a67-8585-dd7ea14a1893.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\FW2PTF1062X-LGR-1_746b7853-7f7f-4a67-8585-dd7ea14a1893.webp"
     },
     {
       "Identity": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\IG3320-1_73fcc57c-0f18-4400-8a1a-fa9aec29911b.webp",

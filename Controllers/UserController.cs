@@ -29,7 +29,7 @@ public class UserController : Controller
         var user = await _context.Users.FindAsync(userId);
         if (user == null)
         {
-            // Người dùng chưa đăng nhập, lưu URL hiện tại và chuyển hướng đến trang đăng nhập
+            // người dùng chưa đăng nhập
             HttpContext.Session.SetString("ReturnUrl", Url.Action("Index", "User"));
             return NotFound();
         }

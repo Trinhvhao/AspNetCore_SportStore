@@ -13,62 +13,73 @@ public class OrderController : Controller
         _context = context;
     }
 
-    [HttpPost]
-    public async Task<IActionResult> Checkout(string shippingMethod, string paymentMethod, string shippingAddress)
+ [HttpPost]
+public async Task<IActionResult> Checkout(string shippingMethod, string paymentMethod, string shippingAddress)
+{
+    // xác thực
+    var userId = HttpContext.Session.GetInt32("userID");
+    if (userId == null)
+        // chưa đăng nhập thì chuyển đến đăng nhập
+        return RedirectToAction("Index", "Register");
+
+    // lấy thông tin từ giỏ hàng
+    var cartItems = await _context.Carts
+        .Where(c => c.UserId == userId)
+        .Include(c => c.Product)
+        .ToListAsync();
+
+    if (cartItems.Count == 0)
     {
-        // xác thụực
-        var userId = HttpContext.Session.GetInt32("userID");
-        if (userId == null)
-            // chưa đăng nhập thì chuyển đến đăng nhập
-            return RedirectToAction("Index", "Register");
+        TempData["Message"] = "Giỏ hàng của bạn đang trống.";
+        return RedirectToAction("ViewCart", "Cart");
+    }
 
-        // lấy thông tin từ giỏ hàng
-        var cartItems = await _context.Carts
-            .Where(c => c.UserId == userId)
-            .Include(c => c.Product)
-            .ToListAsync();
+    // tính tổng tiền
+    var totalAmount = cartItems.Sum(c => c.Product.Price * c.Quantity);
 
-        if (cartItems.Count == 0)
+    // tạo đơn hàng
+    var order = new Order
+    {
+        UserId = userId.Value,
+        OrderDate = DateTime.Now,
+        TotalAmount = totalAmount,
+        OrderStatus = "Chờ xác nhận", 
+        ShippingMethod = shippingMethod,
+        PaymentMethod = paymentMethod,
+        ShippingAddress = shippingAddress
+    };
+    _context.Orders.Add(order);
+    await _context.SaveChangesAsync();
+
+    // chi tiết đơn hàng
+    foreach (var cartItem in cartItems)
+    {
+        var orderDetail = new OrderDetail
         {
-           
-            TempData["Message"] = "Giỏ hàng của bạn đang trống.";
+            OrderId = order.OrderId,
+            ProductId = cartItem.ProductId,
+            Quantity = cartItem.Quantity,
+            UnitPrice = cartItem.Product.Price
+        };
+        _context.OrderDetails.Add(orderDetail);
+
+        // trừ số lượng sản phẩm trong kho
+        var product = cartItem.Product;
+        product.StockQuantity -= cartItem.Quantity;
+        if (product.StockQuantity < 0)
+        {
+            TempData["Message"] = $"Sản phẩm {product.Name} không đủ số lượng trong kho.";
             return RedirectToAction("ViewCart", "Cart");
         }
-
-        // tính tổng tiền
-        var totalAmount = cartItems.Sum(c => c.Product.Price * c.Quantity);
-
-        // tạo đơn hàng
-        var order = new Order
-        {
-            UserId = userId.Value,
-            OrderDate = DateTime.Now,
-            TotalAmount = totalAmount,
-            OrderStatus = "Chờ xác nhận", 
-            ShippingMethod = shippingMethod,
-            PaymentMethod = paymentMethod,
-            ShippingAddress = shippingAddress
-        };
-        _context.Orders.Add(order);
-        await _context.SaveChangesAsync();
-        // chi tiết đơn hàng
-        foreach (var cartItem in cartItems)
-        {
-            var orderDetail = new OrderDetail
-            {
-                OrderId = order.OrderId,
-                ProductId = cartItem.ProductId,
-                Quantity = cartItem.Quantity,
-                UnitPrice = cartItem.Product.Price
-            };
-            _context.OrderDetails.Add(orderDetail);
-        }
-        
-        // xóa các sản phẩm trong giỏ hàng 
-        _context.Carts.RemoveRange(cartItems);
-        await _context.SaveChangesAsync();
-        return RedirectToAction("OrderConfirm", new { orderId = order.OrderId });
+        _context.Products.Update(product);
     }
+
+    // xóa các sản phẩm trong giỏ hàng 
+    _context.Carts.RemoveRange(cartItems);
+    await _context.SaveChangesAsync();
+
+    return RedirectToAction("OrderConfirm", new { orderId = order.OrderId });
+}
 
     public async Task<IActionResult> OrderConfirm(int orderId)
     {

@@ -13,21 +13,20 @@ public class OrderADController : Controller
     {
         _context = context;
     }
-
-    // Hiển thị danh sách đơn hàng
+    
     public IActionResult Index()
     {
         var orders = _context.Orders.ToList();
         return View(orders);
     }
 
-    // Chi tiết đơn hàng
+    // chi tiet
 
     public async Task<IActionResult> Details(int? id)
     {
         if (id == null) return NotFound("Order ID is missing.");
 
-        // Lấy thông tin đơn hàng dựa trên orderId
+        // lay thong tin dua tren order
         var order = await _context.Orders
             .Include(o => o.OrderDetails)
             .ThenInclude(od => od.Product)
@@ -35,12 +34,10 @@ public class OrderADController : Controller
             .FirstOrDefaultAsync(o => o.OrderId == id);
 
         if (order == null) return NotFound("Order not found.");
-
-        // Truyền thông tin đơn hàng đến view
+        
         return View(order);
     }
-
-    // Tạo đơn hàng mới
+    
     [HttpGet]
     public IActionResult Create()
     {
@@ -55,44 +52,35 @@ public class OrderADController : Controller
         return RedirectToAction(nameof(Index));
     }
 
-    // Sửa đơn hàng
-    [HttpGet]
-    public async Task<IActionResult> Edit(int? id)
+    
+    // GET: /Order/Edit/5
+    public IActionResult Edit(int? id)
     {
         if (id == null) return NotFound();
 
-        var order = await _context.Orders.FindAsync(id);
+        var order = _context.Orders
+            .Include(o => o.OrderDetails)
+            .ThenInclude(od => od.Product)
+            .FirstOrDefault(o => o.OrderId == id);
+
         if (order == null) return NotFound();
+
         return View(order);
     }
 
+    // POST: /Order/Edit/5
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(int id, [Bind("Id,ProductName,Quantity,Price,TotalPrice")] Order order)
+    public async Task<IActionResult> Edit(int id, Order order)
     {
         if (id != order.OrderId) return NotFound();
 
-        if (ModelState.IsValid)
-        {
-            try
-            {
                 _context.Update(order);
                 await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!OrderExists(order.OrderId))
-                    return NotFound();
-                throw;
-            }
-
+         
             return RedirectToAction(nameof(Index));
-        }
-
-        return View(order);
     }
-
-
+    
     [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Delete(int id)
@@ -104,11 +92,31 @@ public class OrderADController : Controller
         await _context.SaveChangesAsync();
         return RedirectToAction(nameof(Index));
     }
-
-
-    // Action để lấy ra các đơn hàng được tạo vào ngày hiện tại
-    private bool OrderExists(int id)
+    
+    
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> ConfirmOrder(int id)
     {
-        return _context.Orders.Any(e => e.OrderId == id);
+        var order = await _context.Orders.FindAsync(id);
+        if (order == null) return NotFound();
+
+        if (order.OrderStatus == "Chờ xác nhận")
+        {
+            order.OrderStatus = "Đang giao";
+            _context.Update(order);
+            await _context.SaveChangesAsync();
+        }
+
+        return RedirectToAction("Index", "Admin");
     }
+
+    // Hiển thị danh sách đơn hàng theo trạng thái
+    public IActionResult OrdersByStatus(string status)
+    {
+        var orders = _context.Orders.Where(o => o.OrderStatus == status).ToList();
+        return View("Index", orders);
+    }
+
 }
+

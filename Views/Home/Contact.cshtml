@@ -11,13 +11,13 @@
             <div class="col-first">
                 <h1>Contact Us</h1>
                 <nav class="d-flex align-items-center">
-                    <a href="index.html">
+                    <a asp-controller="Home" asp-action="Index">
                         Home
                         <span>
                             <i class="fa-solid fa-arrow-right"></i>
                         </span>
                     </a>
-                    <a href="category.html">Contact</a>
+                    <a href="#">Contact</a>
                 </nav>
             </div>
         </div>
@@ -56,7 +56,7 @@
                 </div>
             </div>
             <div class="col-lg-9">
-                <form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                <form class="row contact_form"  asp-action="Contact" asp-controller="Home" method="post" method="post" id="contactForm" novalidate="novalidate">
                     <div class="col-md-6">
                         <div class="form-group">
                             <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'">

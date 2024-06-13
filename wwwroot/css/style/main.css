@@ -7127,6 +7127,8 @@ width:40px;
 
 .categories_post img {
     max-width: 100%;
+    height: 270px;
+    object-fit: cover;
 }
 
 .categories_post .categories_details {
@@ -7135,7 +7137,7 @@ width:40px;
     left: 20px;
     right: 20px;
     bottom: 20px;
-    background: rgba(34, 34, 34, 0.8);
+    background:rgb(139 198 211 / 48%);
     color: #fff;
     transition: all 0.3s linear;
     display: flex;
@@ -7167,7 +7169,7 @@ width:40px;
 }
 
 .categories_post:hover .categories_details {
-    background: rgba(255, 186, 0, 0.8);
+    background: rgba(23, 147, 190, 0.8);
 }
 
 /*============ blog_left_sidebar css ==============*/
@@ -7238,7 +7240,7 @@ width:40px;
 .blog_details h2 {
     font-size: 24px;
     line-height: 36px;
-    color: #222222;
+    color: #047373;
     font-weight: 600;
     transition: all 0.3s linear;
 }
@@ -7270,7 +7272,7 @@ width:40px;
 .blog_right_sidebar .widget_title {
     font-size: 18px;
     line-height: 25px;
-    background: #ffba00;
+    background: #30adf6;
     text-align: center;
     color: #fff;
     padding: 8px 0px;
@@ -7287,7 +7289,7 @@ width:40px;
     padding-left: 20px;
     border-radius: 45px;
     z-index: 0;
-    background: #ffba00;
+    background: #30adf6;
 }
 
 .blog_right_sidebar .search_widget .input-group .form-control.placeholder {
@@ -7373,7 +7375,7 @@ width:40px;
 }
 
 .blog_right_sidebar .popular_post_widget .post_item .media-body h3:hover {
-    color: #ffba00;
+    color: #30adf6;
 }
 
 .blog_right_sidebar .popular_post_widget .post_item .media-body p {
@@ -7468,7 +7470,7 @@ width:40px;
 }
 
 .blog_right_sidebar .newsletter_widget .bbtns {
-    background: #ffba00;
+    background: #30adf6;
     color: #fff;
     font-size: 12px;
     line-height: 38px;
@@ -7498,7 +7500,7 @@ width:40px;
 }
 
 .blog_right_sidebar .tag_cloud_widget ul li a:hover {
-    background: #ffba00;
+    background: #30adf6;
     color: #fff;
 }
 
@@ -8581,4 +8583,257 @@ width:40px;
     line-height: 1.25rem;
     border-radius: 0.375rem;
     border: none;
-} 
+}
+#btn-message {
+    --text-color: #000;
+    --bg-color-sup: #d2d2d2;
+    --bg-color: #f4f4f4;
+    --bg-hover-color: #ffffff;
+    --online-status: #00da00;
+    --font-size: 16px;
+    --btn-transition: all 0.2s ease-out;
+}
+
+.button-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 400 var(--font-size) Helvetica Neue, sans-serif;
+    box-shadow: 0 0 2.17382px rgba(0,0,0,.049),0 1.75px 6.01034px rgba(0,0,0,.07),0 3.63px 14.4706px rgba(0,0,0,.091),0 22px 48px rgba(0,0,0,.14);
+    background-color: var(--bg-color);
+    border-radius: 68px;
+    cursor: pointer;
+    padding: 6px 10px 6px 6px;
+    width: fit-content;
+    height: 40px;
+    border: 0;
+    overflow: hidden;
+    position: relative;
+    transition: var(--btn-transition);
+}
+
+.button-message:hover {
+    height: 56px;
+    padding: 8px 20px 8px 8px;
+    background-color: var(--bg-hover-color);
+    transition: var(--btn-transition);
+}
+
+.button-message:active {
+    transform: scale(0.99);
+}
+
+.content-avatar {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    transition: var(--btn-transition);
+    position: relative;
+}
+
+.button-message:hover .content-avatar {
+    width: 40px;
+    height: 40px;
+}
+
+.avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--bg-color-sup);
+}
+
+.user-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.status-user {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    right: 1px;
+    bottom: 1px;
+    border-radius: 50%;
+    outline: solid 2px var(--bg-color);
+    background-color: var(--online-status);
+    transition: var(--btn-transition);
+    animation: active-status 2s ease-in-out infinite;
+}
+
+.button-message:hover .status-user {
+    width: 10px;
+    height: 10px;
+    right: 1px;
+    bottom: 1px;
+    outline: solid 3px var(--bg-hover-color);
+}
+
+.notice-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 8px;
+    text-align: initial;
+    color: var(--text-color);
+}
+
+.username {
+    letter-spacing: -6px;
+    height: 0;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: var(--btn-transition);
+}
+
+.user-id {
+    font-size: 12px;
+    letter-spacing: -6px;
+    height: 0;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: var(--btn-transition);
+}
+
+.lable-message {
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    transform: scaleY(1);
+    transition: var(--btn-transition);
+}
+
+.button-message:hover .username {
+    height: auto;
+    letter-spacing: normal;
+    opacity: 1;
+    transform: translateY(0);
+    transition: var(--btn-transition);
+}
+
+.button-message:hover .user-id {
+    height: auto;
+    letter-spacing: normal;
+    opacity: 1;
+    transform: translateY(0);
+    transition: var(--btn-transition);
+}
+
+.button-message:hover .lable-message {
+    height: 0;
+    transform: scaleY(0);
+    transition: var(--btn-transition);
+}
+
+.lable-message, .username {
+    font-weight: 600;
+}
+
+.number-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 8px;
+    font-size: 12px;
+    width: 16px;
+    height: 16px;
+    background-color: var(--bg-color-sup);
+    border-radius: 20px;
+}
+
+/*==============================================*/
+@keyframes active-status {
+    0% {
+        background-color: var(--online-status);
+    }
+
+    33.33% {
+        background-color: #93e200;
+    }
+
+    66.33% {
+        background-color: #93e200;
+    }
+
+    100% {
+        background-color: var(--online-status);
+    }
+}
+
+.cardf {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+/* for all social containers*/
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    border-radius: 5px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 0.3s;
+}
+/* instagram*/
+.containerOne:hover {
+    background-color: #d62976;
+    transition-duration: 0.3s;
+}
+/* twitter*/
+.containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: 0.3s;
+}
+/* linkdin*/
+.containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: 0.3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+    background-color: green;
+    transition-duration: 0.3s;
+}
+
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: 0.3s;
+}
+
+.socialSvg {
+    width: 17px;
+}
+
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

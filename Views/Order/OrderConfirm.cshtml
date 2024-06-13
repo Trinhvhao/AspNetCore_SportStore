@@ -154,7 +154,23 @@
                             <h5></h5>
                         </td>
                         <td>
-                            <p>@(Model.TotalAmount + 50000).ToString("C", new System.Globalization.CultureInfo("vi-VN"))</p> <!-- Giả định phí giao hàng là 50,000 VND -->
+                            
+                         <p class="font-weight-bold text-primary">
+                             @if(Model.ShippingMethod == "Giao hàng hoả tốc")
+                             {
+                                 @($"{(Model.TotalAmount + 50000):N0}₫")
+                             }
+                             else if(Model.ShippingMethod == "Giao hàng nhanh")
+                             {
+                                 @($"{(Model.TotalAmount + 30000):N0}₫")
+                             }
+                             else
+                             {
+                                 @($"{(Model.TotalAmount + 15000):N0}₫")
+                             }
+                         </p>
+
+                         
                         </td>
                     </tr>
 
@@ -164,4 +180,5 @@
         </div>
     </div>
 </section>
+
 <!--================End Order Details Area =================-->

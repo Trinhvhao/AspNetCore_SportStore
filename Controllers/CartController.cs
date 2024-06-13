@@ -32,7 +32,8 @@ public class CartController : Controller
             {
                 UserId = (int)userId,
                 ProductId = productId,
-                Quantity = quantity
+                Quantity = quantity,
+         
             };
             _context.Carts.Add(cartItem);
         }
@@ -41,6 +42,7 @@ public class CartController : Controller
 
         return RedirectToAction("ViewCart");
     }
+
 
     public async Task<IActionResult> ViewCart()
     {

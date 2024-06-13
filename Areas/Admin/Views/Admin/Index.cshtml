@@ -155,7 +155,20 @@
                                 }
                                 <td>@elementPrice</td>
                                 <td>@order.OrderDate.ToString("yyyy-MM-dd")</td>
-                            </tr>
+                                <td>
+                                                        @if (order.OrderStatus == "Chờ xác nhận")
+                                                        {
+                                                            <form asp-action="ConfirmOrder" asp-controller="OrderAD" method="post">
+                                                                <input type="hidden" name="id" value="@order.OrderId" />
+                                                                <button type="submit" class="btn btn-primary">Xác nhận đơn hàng</button>
+                                                            </form>
+                                                        }
+                                                        else
+                                                        {
+                                                            <p>Đã xác nhận</p>
+                                                        }
+                                                    </td>
+                                </tr>
                         }
                         </tbody>
                     </table>

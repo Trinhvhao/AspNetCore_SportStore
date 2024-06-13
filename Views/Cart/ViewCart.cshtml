@@ -21,47 +21,60 @@
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach (var cart in Model)
+                    @if (Model.Count == 0)
                     {
                         <tr>
-                            <td>
-                                <div class="media">
-                                    <div class="d-flex">
-                                        <img src="@cart.Product.Images.FirstOrDefault()?.ImagePath" alt="@cart.Product.Name" width="100" height="100">
-                                    </div>
-                                    <div class="media-body">
-                                        <h4>@cart.Product.Name</h4>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                @{
-                                    var elementPrice = cart.Product.Price.ToString("C", new CultureInfo("vi-VN"));
-                                }
-                                <h5 class="price">@elementPrice </h5>
-                            </td>
-                            <td>
-                                <div class="product_count">
-                                    <input type="text" name="quantity" id="quantity_@cart.ProductId" maxlength="12" value="@cart.Quantity" title="Quantity" class="input-text qty">
-                                </div>
-                            </td>
-                            <td>
-                                @{
-                                    var totalPrice = (cart.Product.Price * cart.Quantity).ToString("C", new CultureInfo("vi-VN"));
-                                }
-                                <h5>@totalPrice</h5>
-                            </td>
-                            <td>
-                                <input type="checkbox" class="checkbox" data-price="@cart.Product.Price" data-quantity="@cart.Quantity"/>
-                            </td>
-                            <td>
-                                <form asp-action="RemoveFromCart" asp-controller="Cart" method="post" onsubmit="return confirm('Bạn có chắc chắn muốn xóa sản phẩm này khỏi giỏ hàng?');">
-                                    <input type="hidden" name="productId" value="@cart.ProductId"/>
-                                    <button type="submit" class="btn btn-danger">X</button>
-                                </form>
+                            <td colspan="6">
+                                <p>Không có sản phẩm nào trong giỏ hàng.</p>
+                                <p><a asp-controller="Category" asp-action="Index">Đến trang mua sắm</a></p>
                             </td>
                         </tr>
                     }
+                    else
+                    {
+                        @foreach (var cart in Model)
+                        {
+                            <tr>
+                                <td>
+                                    <div class="media">
+                                        <div class="d-flex">
+                                            <img src="@cart.Product.Images.FirstOrDefault()?.ImagePath" alt="@cart.Product.Name" width="100" height="100">
+                                        </div>
+                                        <div class="media-body">
+                                            <h4>@cart.Product.Name</h4>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    @{
+                                        var elementPrice = cart.Product.Price.ToString("C", new CultureInfo("vi-VN"));
+                                    }
+                                    <h5 class="price">@elementPrice</h5>
+                                </td>
+                                <td>
+                                    <div class="product_count">
+                                        <input type="text" name="quantity" id="quantity_@cart.ProductId" maxlength="12" value="@cart.Quantity" title="Quantity" class="input-text qty">
+                                    </div>
+                                </td>
+                                <td>
+                                    @{
+                                        var totalPrice = (cart.Product.Price * cart.Quantity).ToString("C", new CultureInfo("vi-VN"));
+                                    }
+                                    <h5>@totalPrice</h5>
+                                </td>
+                                <td>
+                                    <input type="checkbox" class="checkbox" data-price="@cart.Product.Price" data-quantity="@cart.Quantity" />
+                                </td>
+                                <td>
+                                    <form asp-action="RemoveFromCart" asp-controller="Cart" method="post" onsubmit="return confirm('Bạn có chắc chắn muốn xóa sản phẩm này khỏi giỏ hàng?');">
+                                        <input type="hidden" name="productId" value="@cart.ProductId" />
+                                        <button type="submit" class="btn btn-danger">X</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    }
+
                     <tr class="bottom_button">
                         <td>
                             <a class="gray_btn" href="#">Update Cart</a>
