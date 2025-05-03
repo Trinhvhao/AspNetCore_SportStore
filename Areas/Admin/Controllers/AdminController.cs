@@ -23,7 +23,6 @@ public class AdminController : Controller
         var user = await _context.Users.FindAsync(userId);
         if (user == null || user.Role != "Admin")
         {
-            // Nếu userID không tồn tại hoặc không có quyền "Admin", chuyển hướng đến trang cần thiết
             return RedirectToAction("AccessDenied", "Admin");
         }
         
@@ -34,10 +33,12 @@ public class AdminController : Controller
             .Include(o => o.OrderDetails)
             .Where(o => o.OrderDate.Date == today)
             .ToList();
+        
         // lấy danh sách người dùng mới đăng ký trong ngày hôm nay
         var newUsers = await _context.Users
             .Where(u => u.CreatedAt.Date == today)
             .ToListAsync();
+        
         // lưu danh sách người dùng mới vào ViewBag
         ViewBag.NewUsers = newUsers;
         // lấy số lượng đơn hàng
@@ -55,8 +56,6 @@ public class AdminController : Controller
         ViewData["CategoryCount"] = categoryCount;
         return View(ordersToday); // Load the view based on viewName
     }
-
-
     public IActionResult AccessDenied()
     {
         return View();

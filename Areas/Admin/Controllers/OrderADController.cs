@@ -20,7 +20,6 @@ public class OrderADController : Controller
         return View(orders);
     }
 
-    // chi tiet
 
     public async Task<IActionResult> Details(int? id)
     {
@@ -111,7 +110,7 @@ public class OrderADController : Controller
         return RedirectToAction("Index", "Admin");
     }
 
-    // Hiển thị danh sách đơn hàng theo trạng thái
+    // hiển thị danh sách đơn hàng theo trạng thái
     public IActionResult OrdersByStatus(string status)
     {
         var orders = _context.Orders.Where(o => o.OrderStatus == status).ToList();

@@ -30,12 +30,14 @@
                                     @* Hiển thị giá của sản phẩm *@
                                 </div>
                                 <div class="prd-bottom">
-                                    <a asp-controller="Cart" asp-action="AddToCart" asp-route-productId="@product.ProductId" class="social-info">
+                                    <a asp-controller="Cart" asp-action="AddToCart" asp-route-productId="@product.ProductId" asp-route-quantity="1" class="social-info">
                                         <span>
                                             <i class="fa-solid fa-plus"></i>
                                         </span>
                                         <p class="hover-text">add to cart</p>
                                     </a>
+
+
                                     <a href="#" class="social-info">
                                         <span>
                                             <i class="fa-regular fa-heart"></i>

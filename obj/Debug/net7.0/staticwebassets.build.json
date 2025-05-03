@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0/a2uvJ0lfbYALxHngWFjaGjHSvbELcAh2Q5+ERQb/Y=",
+  "Hash": "nQNlvMOhxFhKn7iJVjqskRvEOVhatYrJSZohzLvXtI0=",
   "Source": "BackEnd_Project",
   "BasePath": "_content/BackEnd_Project",
   "Mode": "Default",
@@ -3432,6 +3432,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\1_df3db0a7cfad460cad99d5d052a0488a_master_6f6e6f73-d765-4607-821d-6a8d647789be.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\13275008e0f125fdf8e83f01f7ca6a3e_5254596d-e6eb-4cd3-a8e9-54c181b70618.jpg",
+      "SourceId": "BackEnd_Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\",
+      "BasePath": "_content/BackEnd_Project",
+      "RelativePath": "images/13275008e0f125fdf8e83f01f7ca6a3e_5254596d-e6eb-4cd3-a8e9-54c181b70618.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\13275008e0f125fdf8e83f01f7ca6a3e_5254596d-e6eb-4cd3-a8e9-54c181b70618.jpg"
     },
     {
       "Identity": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\1381912-001-1_fa412c49-4a97-4352-ad66-8746dcf24a4b.webp",
@@ -6985,23 +7002,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\support.svg"
-    },
-    {
-      "Identity": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\tui-1_f30b236eb9e4481a9ce08e180eb3943f_master_af1c23ad-f984-4d60-9e06-ce7a2853a28a.webp",
-      "SourceId": "BackEnd_Project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\",
-      "BasePath": "_content/BackEnd_Project",
-      "RelativePath": "images/tui-1_f30b236eb9e4481a9ce08e180eb3943f_master_af1c23ad-f984-4d60-9e06-ce7a2853a28a.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\tui-1_f30b236eb9e4481a9ce08e180eb3943f_master_af1c23ad-f984-4d60-9e06-ce7a2853a28a.webp"
     },
     {
       "Identity": "C:\\Users\\Admin\\RiderProjects\\BackEnd_Project\\BackEnd_Project\\wwwroot\\images\\tui-2_7b291e457aa5424ba3a8f520cb6e7316_master_e58184bc-80b2-4af5-9588-66ffe63fbb79.webp",

@@ -2064,6 +2064,7 @@
         <_ContentIncludedByDefault Remove="Areas\Admin\Views\SpecificationAD\Index.cshtml"/>
         <_ContentIncludedByDefault Remove="Pages\User\Index.cshtml" />
         <_ContentIncludedByDefault Remove="Views\WishList\Index.cshtml" />
+        <_ContentIncludedByDefault Remove="Views\OrderDetail\Index.cshtml" />
     </ItemGroup>
 
     <ItemGroup>

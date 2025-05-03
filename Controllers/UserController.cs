@@ -76,7 +76,7 @@ public class UserController : Controller
      
         return RedirectToAction("Index"); 
     }
-    // đăng xuất người dùng
+    // Đăng xuất người dùng
     public IActionResult Logout()
     {
         // xóa thông tin phiên liên quan đến người dùng

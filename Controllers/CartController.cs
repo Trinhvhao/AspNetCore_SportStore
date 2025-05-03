@@ -14,34 +14,42 @@ public class CartController : Controller
     }
 
     [HttpPost]
-    public async Task<IActionResult> AddToCart(int productId, int quantity)
+    [HttpPost]
+    [HttpGet]
+    public async Task<IActionResult> AddToCart(int productId, int quantity = 1) // Mặc định số lượng là 1
     {
         var userId = HttpContext.Session.GetInt32("userID");
 
         if (userId == null) return RedirectToAction("Index", "Register");
 
+        // Kiểm tra xem sản phẩm đã có trong giỏ hàng của người dùng chưa
         var cartItem = await _context.Carts.FirstOrDefaultAsync(c => c.UserId == userId && c.ProductId == productId);
 
         if (cartItem != null)
         {
+            // Nếu có rồi, tăng số lượng
             cartItem.Quantity += quantity;
         }
         else
         {
+            // Nếu chưa có, thêm sản phẩm mới vào giỏ hàng
             cartItem = new Cart
             {
                 UserId = (int)userId,
                 ProductId = productId,
                 Quantity = quantity,
-         
             };
             _context.Carts.Add(cartItem);
         }
 
+        // Lưu thay đổi vào cơ sở dữ liệu
         await _context.SaveChangesAsync();
 
+        // Chuyển hướng đến trang xem giỏ hàng
         return RedirectToAction("ViewCart");
     }
+
+
 
 
     public async Task<IActionResult> ViewCart()

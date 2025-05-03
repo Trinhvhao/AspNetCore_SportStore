@@ -28,14 +28,10 @@ public class UserADController : Controller
     [HttpPost]
     public IActionResult Create(User user)
     {
-        if (ModelState.IsValid)
-        {
+       
             _context.Users.Add(user);
             _context.SaveChanges();
             return RedirectToAction("Index");
-        }
-
-        return View(user);
     }
 
     [HttpGet]

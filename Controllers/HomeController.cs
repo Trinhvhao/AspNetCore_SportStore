@@ -18,12 +18,11 @@ public class HomeController : Controller
     {
         // lấy userID từ session (giả sử đã được lưu trước đó)
         var userId = HttpContext.Session.GetInt32("userID");
-
         // gán giá trị userID vào ViewBag
         ViewBag.UserID = userId;
         // thực hiện truy vấn để lấy thông tin sản phẩm 
         var productsWithImage = _context.Products
-            .Include(p => p.Images) 
+            .Include(p=>p.Images) 
             .ToList();
 
         return View(productsWithImage);
